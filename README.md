@@ -26,6 +26,7 @@ sh build.sh -pv 3.2.0 -av 3.2.0 -rv 3.2.0
 ```
 
 ## License
+
 ```
 Copyright (C) 2025 Beijing Yishu Technology Co., Ltd.
 
@@ -41,3 +42,16 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
+### Third-Party Libraries
+
+This project includes the following third-party libraries:
+
+- **CocoaLumberjack** - BSD 3-Clause License (Deusty, LLC)
+- **Masonry** - MIT License (Masonry Team)  
+- **FMDB** - License varies by version (Gus Mueller, Flying Meat Inc.)
+- **SocketRocket** - BSD License (Facebook, Inc.)
+- **LZ4** - BSD 2-Clause License (Yann Collet)
+- **fishhook** - BSD 3-Clause License (Facebook, Inc.)
+
+The third-party libraries listed above have been integrated and modified within this project. All third-party libraries used in this project are compatible with the Apache License 2.0.
