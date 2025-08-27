@@ -1,0 +1,41 @@
+//
+//  GrowingAnalytics
+//  Copyright (C) 2025 Beijing Yishu Technology Co., Ltd.
+//
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+//
+
+
+#pragma once
+
+#if defined (__cplusplus)
+extern "C" {
+#endif
+
+#ifdef _MSC_VER   // Visual Studio
+#  define inline __inline           // Visual is not C99, but supports some kind of inline
+#endif
+
+int GROW_LZ4_compress   (const char* source, char* dest, int isize);
+int GROW_LZ4_uncompress (const char* source, char* dest, int osize);
+
+static inline int LZ4_compressBound(int isize)   { return ((isize) + ((isize)/255) + 16); }
+#define           LZ4_COMPRESSBOUND(    isize)            ((isize) + ((isize)/255) + 16)
+
+int GROW_LZ4_compress_limitedOutput   (const char* source, char* dest, int isize, int maxOutputSize);
+int GROW_LZ4_uncompress_unknownOutputSize (const char* source, char* dest, int isize, int maxOutputSize);
+
+
+#if defined (__cplusplus)
+}
+#endif

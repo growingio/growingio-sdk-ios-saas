@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		188ACA262103899C00B22352 /* GrowingReactNativeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 188ACA242103899C00B22352 /* GrowingReactNativeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		188ACA272103899C00B22352 /* GrowingReactNativeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 188ACA252103899C00B22352 /* GrowingReactNativeKit.m */; };
+		18AA046D20F9D28500DD4E9F /* ReactNative+GrowingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AA046B20F9D28500DD4E9F /* ReactNative+GrowingNode.m */; };
+		18AA046E20F9D28500DD4E9F /* ReactNative+GrowingNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 18AA046C20F9D28500DD4E9F /* ReactNative+GrowingNode.h */; };
+		18AA047120F9D29C00DD4E9F /* ReactNative+Growing.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AA046F20F9D29C00DD4E9F /* ReactNative+Growing.m */; };
+		18AA047220F9D29C00DD4E9F /* ReactNative+Growing.h in Headers */ = {isa = PBXBuildFile; fileRef = 18AA047020F9D29C00DD4E9F /* ReactNative+Growing.h */; };
+		18E779D621301D04009EDF9C /* GrowingReactNativeEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 18E779D421301D04009EDF9C /* GrowingReactNativeEvent.h */; };
+		18E779D721301D04009EDF9C /* GrowingReactNativeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E779D521301D04009EDF9C /* GrowingReactNativeEvent.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		189346E420F9DCBF006F778F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189346E020F9DCBF006F778F /* GrowingAutoTrackKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1875FDCB2090A1130019AED3;
+			remoteInfo = GrowingAutoTrackKit;
+		};
+		189346E620F9DCFA006F778F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189346E020F9DCBF006F778F /* GrowingAutoTrackKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1875FDCA2090A1130019AED3;
+			remoteInfo = GrowingAutoTrackKit;
+		};
+		18BF6BA923B1BEA000147930 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 189346E020F9DCBF006F778F /* GrowingAutoTrackKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 186DC68D2396647D002C0D52;
+			remoteInfo = GrowingAutoTrackKitUnitTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		188ACA242103899C00B22352 /* GrowingReactNativeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingReactNativeKit.h; sourceTree = "<group>"; };
+		188ACA252103899C00B22352 /* GrowingReactNativeKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingReactNativeKit.m; sourceTree = "<group>"; };
+		189346E020F9DCBF006F778F /* GrowingAutoTrackKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GrowingAutoTrackKit.xcodeproj; path = ../GrowingAutoTrackKit/GrowingAutoTrackKit.xcodeproj; sourceTree = "<group>"; };
+		18AA045E20F9CBF600DD4E9F /* GrowingReactNativeKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GrowingReactNativeKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AA046220F9CBF600DD4E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18AA046B20F9D28500DD4E9F /* ReactNative+GrowingNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ReactNative+GrowingNode.m"; sourceTree = "<group>"; };
+		18AA046C20F9D28500DD4E9F /* ReactNative+GrowingNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReactNative+GrowingNode.h"; sourceTree = "<group>"; };
+		18AA046F20F9D29C00DD4E9F /* ReactNative+Growing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ReactNative+Growing.m"; sourceTree = "<group>"; };
+		18AA047020F9D29C00DD4E9F /* ReactNative+Growing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReactNative+Growing.h"; sourceTree = "<group>"; };
+		18E779D421301D04009EDF9C /* GrowingReactNativeEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingReactNativeEvent.h; sourceTree = "<group>"; };
+		18E779D521301D04009EDF9C /* GrowingReactNativeEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingReactNativeEvent.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18AA045A20F9CBF600DD4E9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		188ACA232103890F00B22352 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				188ACA242103899C00B22352 /* GrowingReactNativeKit.h */,
+				188ACA252103899C00B22352 /* GrowingReactNativeKit.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		189346E120F9DCBF006F778F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				189346E520F9DCBF006F778F /* GrowingAutoTrackKit.framework */,
+				18BF6BAA23B1BEA000147930 /* GrowingAutoTrackKitUnitTest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18AA045420F9CBF600DD4E9F = {
+			isa = PBXGroup;
+			children = (
+				18AA046020F9CBF600DD4E9F /* GrowingReactNativeKit */,
+				18AA045F20F9CBF600DD4E9F /* Products */,
+				18AA047420F9D32500DD4E9F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18AA045F20F9CBF600DD4E9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18AA045E20F9CBF600DD4E9F /* GrowingReactNativeKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18AA046020F9CBF600DD4E9F /* GrowingReactNativeKit */ = {
+			isa = PBXGroup;
+			children = (
+				18E779D321301CDD009EDF9C /* ReactNativeEvent */,
+				188ACA232103890F00B22352 /* Public */,
+				18AA046A20F9D25C00DD4E9F /* HookViews */,
+				18AA046920F9D25100DD4E9F /* GrowingNode */,
+				18AA046220F9CBF600DD4E9F /* Info.plist */,
+			);
+			path = GrowingReactNativeKit;
+			sourceTree = "<group>";
+		};
+		18AA046920F9D25100DD4E9F /* GrowingNode */ = {
+			isa = PBXGroup;
+			children = (
+				18AA046C20F9D28500DD4E9F /* ReactNative+GrowingNode.h */,
+				18AA046B20F9D28500DD4E9F /* ReactNative+GrowingNode.m */,
+			);
+			path = GrowingNode;
+			sourceTree = "<group>";
+		};
+		18AA046A20F9D25C00DD4E9F /* HookViews */ = {
+			isa = PBXGroup;
+			children = (
+				18AA047020F9D29C00DD4E9F /* ReactNative+Growing.h */,
+				18AA046F20F9D29C00DD4E9F /* ReactNative+Growing.m */,
+			);
+			path = HookViews;
+			sourceTree = "<group>";
+		};
+		18AA047420F9D32500DD4E9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				189346E020F9DCBF006F778F /* GrowingAutoTrackKit.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18E779D321301CDD009EDF9C /* ReactNativeEvent */ = {
+			isa = PBXGroup;
+			children = (
+				18E779D421301D04009EDF9C /* GrowingReactNativeEvent.h */,
+				18E779D521301D04009EDF9C /* GrowingReactNativeEvent.m */,
+			);
+			path = ReactNativeEvent;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		18AA045B20F9CBF600DD4E9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E779D621301D04009EDF9C /* GrowingReactNativeEvent.h in Headers */,
+				188ACA262103899C00B22352 /* GrowingReactNativeKit.h in Headers */,
+				18AA046E20F9D28500DD4E9F /* ReactNative+GrowingNode.h in Headers */,
+				18AA047220F9D29C00DD4E9F /* ReactNative+Growing.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		18AA045D20F9CBF600DD4E9F /* GrowingReactNativeKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18AA046620F9CBF600DD4E9F /* Build configuration list for PBXNativeTarget "GrowingReactNativeKit" */;
+			buildPhases = (
+				18AA045920F9CBF600DD4E9F /* Sources */,
+				18AA045A20F9CBF600DD4E9F /* Frameworks */,
+				18AA045B20F9CBF600DD4E9F /* Headers */,
+				18AA045C20F9CBF600DD4E9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				189346E720F9DCFA006F778F /* PBXTargetDependency */,
+			);
+			name = GrowingReactNativeKit;
+			productName = GrowingReactNativeKit;
+			productReference = 18AA045E20F9CBF600DD4E9F /* GrowingReactNativeKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18AA045520F9CBF600DD4E9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = GrowingIO;
+				TargetAttributes = {
+					18AA045D20F9CBF600DD4E9F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 18AA045820F9CBF600DD4E9F /* Build configuration list for PBXProject "GrowingReactNativeKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 18AA045420F9CBF600DD4E9F;
+			productRefGroup = 18AA045F20F9CBF600DD4E9F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 189346E120F9DCBF006F778F /* Products */;
+					ProjectRef = 189346E020F9DCBF006F778F /* GrowingAutoTrackKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				18AA045D20F9CBF600DD4E9F /* GrowingReactNativeKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		189346E520F9DCBF006F778F /* GrowingAutoTrackKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GrowingAutoTrackKit.framework;
+			remoteRef = 189346E420F9DCBF006F778F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18BF6BAA23B1BEA000147930 /* GrowingAutoTrackKitUnitTest.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GrowingAutoTrackKitUnitTest.xctest;
+			remoteRef = 18BF6BA923B1BEA000147930 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18AA045C20F9CBF600DD4E9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18AA045920F9CBF600DD4E9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188ACA272103899C00B22352 /* GrowingReactNativeKit.m in Sources */,
+				18E779D721301D04009EDF9C /* GrowingReactNativeEvent.m in Sources */,
+				18AA047120F9D29C00DD4E9F /* ReactNative+Growing.m in Sources */,
+				18AA046D20F9D28500DD4E9F /* ReactNative+GrowingNode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		189346E720F9DCFA006F778F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GrowingAutoTrackKit;
+			targetProxy = 189346E620F9DCFA006F778F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18AA046420F9CBF600DD4E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		18AA046520F9CBF600DD4E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		18AA046720F9CBF600DD4E9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
+				CLANG_MODULES_AUTOLINK = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SXBU677CPT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = ../GrowingCoreKit/GrowingCoreKit/Base/Growing.pch;
+				HEADER_SEARCH_PATHS = (
+					"../GrowingCoreKit/GrowingCoreKit/**",
+					"../GrowingAutoTrackKit/GrowingAutoTrackKit/**",
+				);
+				INFOPLIST_FILE = GrowingReactNativeKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-Wextra",
+					"-Wall",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GrowingIO.GrowingReactNativeKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18AA046820F9CBF600DD4E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
+				CLANG_MODULES_AUTOLINK = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SXBU677CPT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = ../GrowingCoreKit/GrowingCoreKit/Base/Growing.pch;
+				HEADER_SEARCH_PATHS = (
+					"../GrowingCoreKit/GrowingCoreKit/**",
+					"../GrowingAutoTrackKit/GrowingAutoTrackKit/**",
+				);
+				INFOPLIST_FILE = GrowingReactNativeKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-Wextra",
+					"-Wall",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GrowingIO.GrowingReactNativeKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18AA045820F9CBF600DD4E9F /* Build configuration list for PBXProject "GrowingReactNativeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AA046420F9CBF600DD4E9F /* Debug */,
+				18AA046520F9CBF600DD4E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18AA046620F9CBF600DD4E9F /* Build configuration list for PBXNativeTarget "GrowingReactNativeKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AA046720F9CBF600DD4E9F /* Debug */,
+				18AA046820F9CBF600DD4E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18AA045520F9CBF600DD4E9F /* Project object */;
+}

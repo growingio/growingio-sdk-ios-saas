@@ -1,0 +1,134 @@
+//
+//  GrowingAnalytics
+//  Copyright (C) 2025 Beijing Yishu Technology Co., Ltd.
+//
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
+//
+
+
+#import <Foundation/Foundation.h>
+#import <Security/SecCertificate.h>
+
+typedef NS_ENUM(NSInteger, Growing3rdLibSRReadyState) {
+    Growing3rdLib_SR_CONNECTING   = 0,
+    Growing3rdLib_SR_OPEN         = 1,
+    Growing3rdLib_SR_CLOSING      = 2,
+    Growing3rdLib_SR_CLOSED       = 3,
+};
+
+typedef enum Growing3rdLibSRStatusCode : NSInteger {
+    Growing3rdLibSRStatusCodeNormal = 1000,
+    Growing3rdLibSRStatusCodeGoingAway = 1001,
+    Growing3rdLibSRStatusCodeProtocolError = 1002,
+    Growing3rdLibSRStatusCodeUnhandledType = 1003,
+    
+    SRStatusNoStatusReceived = 1005,
+    
+    Growing3rdLibSRStatusCodeInvalidUTF8 = 1007,
+    Growing3rdLibSRStatusCodePolicyViolated = 1008,
+    Growing3rdLibSRStatusCodeMessageTooBig = 1009,
+} Growing3rdLibSRStatusCode;
+
+@class Growing3rdLibSRWebSocket;
+
+extern NSString *const Growing3rdLibSRWebSocketErrorDomain;
+extern NSString *const Growing3rdLibSRHTTPResponseErrorKey;
+
+#pragma mark - Growing3rdLibSRWebSocketDelegate
+
+@protocol Growing3rdLibSRWebSocketDelegate;
+
+#pragma mark - Growing3rdLibSRWebSocket
+
+@interface Growing3rdLibSRWebSocket : NSObject <NSStreamDelegate>
+
+@property (nonatomic, weak) id <Growing3rdLibSRWebSocketDelegate> delegate;
+
+@property (nonatomic, readonly) Growing3rdLibSRReadyState readyState;
+@property (nonatomic, readonly, retain) NSURL *url;
+
+
+
+@property (nonatomic, readonly, copy) NSString *protocol;
+
+
+- (id)initWithURLRequest:(NSURLRequest *)request protocols:(NSArray *)protocols;
+- (id)initWithURLRequest:(NSURLRequest *)request;
+
+
+- (id)initWithURL:(NSURL *)url protocols:(NSArray *)protocols;
+- (id)initWithURL:(NSURL *)url;
+
+
+
+- (void)setDelegateOperationQueue:(NSOperationQueue*) queue;
+- (void)setDelegateDispatchQueue:(dispatch_queue_t) queue;
+
+
+- (void)scheduleInRunLoop:(NSRunLoop *)aRunLoop forMode:(NSString *)mode;
+- (void)unscheduleFromRunLoop:(NSRunLoop *)aRunLoop forMode:(NSString *)mode;
+
+
+- (void)open;
+
+- (void)close;
+- (void)closeWithCode:(NSInteger)code reason:(NSString *)reason;
+
+
+- (void)send:(id)data;
+
+
+- (void)sendPing:(NSData *)data;
+
+@end
+
+#pragma mark - Growing3rdLibSRWebSocketDelegate
+
+@protocol Growing3rdLibSRWebSocketDelegate <NSObject>
+
+
+
+- (void)webSocket:(Growing3rdLibSRWebSocket *)webSocket didReceiveMessage:(id)message;
+
+@optional
+
+- (void)webSocketDidOpen:(Growing3rdLibSRWebSocket *)webSocket;
+- (void)webSocket:(Growing3rdLibSRWebSocket *)webSocket didFailWithError:(NSError *)error;
+- (void)webSocket:(Growing3rdLibSRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean;
+- (void)webSocket:(Growing3rdLibSRWebSocket *)webSocket didReceivePong:(NSData *)pongPayload;
+
+@end
+
+#pragma mark - NSURLRequest (Growing3rdLibCertificateAdditions)
+
+@interface NSURLRequest (Growing3rdLibCertificateAdditions)
+
+@property (nonatomic, retain, readonly) NSArray *Growing3rdLib_SR_SSLPinnedCertificates;
+
+@end
+
+#pragma mark - NSMutableURLRequest (Growing3rdLibCertificateAdditions)
+
+@interface NSMutableURLRequest (Growing3rdLibCertificateAdditions)
+
+@property (nonatomic, retain) NSArray *Growing3rdLib_SR_SSLPinnedCertificates;
+
+@end
+
+#pragma mark - NSRunLoop (Growing3rdLibSRWebSocket)
+
+@interface NSRunLoop (Growing3rdLibSRWebSocket)
+
++ (NSRunLoop *)Growing3rdLib_SR_networkRunLoop;
+
+@end

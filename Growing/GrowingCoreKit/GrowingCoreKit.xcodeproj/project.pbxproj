@@ -1,0 +1,1816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1817BAEE22E801CD0000FD1C /* GrowingDeepLinkModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1817BAEC22E801CD0000FD1C /* GrowingDeepLinkModel.h */; };
+		1817BAEF22E801CD0000FD1C /* GrowingDeepLinkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1817BAED22E801CD0000FD1C /* GrowingDeepLinkModel.m */; };
+		182AE4E6214A5F230077415C /* GrowingGCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 182AE4E4214A5F230077415C /* GrowingGCDAsyncSocket.h */; };
+		182AE4E7214A5F230077415C /* GrowingGCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 182AE4E5214A5F230077415C /* GrowingGCDAsyncSocket.m */; };
+		182AE4F5214A5F4D0077415C /* GrowingHTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 182AE4E9214A5F4C0077415C /* GrowingHTTPAuthenticationRequest.m */; };
+		182AE4F6214A5F4D0077415C /* GrowingHTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 182AE4EA214A5F4C0077415C /* GrowingHTTPServer.h */; };
+		182AE4F7214A5F4D0077415C /* GrowingHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 182AE4EB214A5F4C0077415C /* GrowingHTTPConnection.m */; };
+		182AE4F8214A5F4D0077415C /* GrowingWebSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 182AE4EC214A5F4C0077415C /* GrowingWebSocketServer.m */; };
+		182AE4F9214A5F4D0077415C /* GrowingHTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 182AE4ED214A5F4C0077415C /* GrowingHTTPMessage.m */; };
+		182AE4FA214A5F4D0077415C /* GrowingHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 182AE4EE214A5F4C0077415C /* GrowingHTTPServer.m */; };
+		182AE4FB214A5F4D0077415C /* GrowingHTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 182AE4EF214A5F4D0077415C /* GrowingHTTPResponse.h */; };
+		182AE4FC214A5F4D0077415C /* GrowingHTTPAuthenticationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 182AE4F0214A5F4D0077415C /* GrowingHTTPAuthenticationRequest.h */; };
+		182AE4FD214A5F4D0077415C /* GrowingHTTPLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 182AE4F1214A5F4D0077415C /* GrowingHTTPLogging.h */; };
+		182AE4FE214A5F4D0077415C /* GrowingWebSocketServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 182AE4F2214A5F4D0077415C /* GrowingWebSocketServer.h */; };
+		182AE4FF214A5F4D0077415C /* GrowingHTTPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 182AE4F3214A5F4D0077415C /* GrowingHTTPMessage.h */; };
+		182AE500214A5F4D0077415C /* GrowingHTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 182AE4F4214A5F4D0077415C /* GrowingHTTPConnection.h */; };
+		182AE50C214A5F730077415C /* GrowingHTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 182AE502214A5F720077415C /* GrowingHTTPFileResponse.m */; };
+		182AE50E214A5F730077415C /* GrowingHTTPDynamicFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 182AE504214A5F720077415C /* GrowingHTTPDynamicFileResponse.h */; };
+		182AE50F214A5F730077415C /* GrowingHTTPDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 182AE505214A5F720077415C /* GrowingHTTPDataResponse.h */; };
+		182AE510214A5F730077415C /* GrowingHTTPDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 182AE506214A5F720077415C /* GrowingHTTPDataResponse.m */; };
+		182AE511214A5F730077415C /* GrowingHTTPAsyncFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 182AE507214A5F720077415C /* GrowingHTTPAsyncFileResponse.h */; };
+		182AE512214A5F730077415C /* GrowingHTTPFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 182AE508214A5F720077415C /* GrowingHTTPFileResponse.h */; };
+		182AE513214A5F730077415C /* GrowingHTTPRedirectResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 182AE509214A5F720077415C /* GrowingHTTPRedirectResponse.h */; };
+		182AE514214A5F730077415C /* GrowingHTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 182AE50A214A5F730077415C /* GrowingHTTPAsyncFileResponse.m */; };
+		182AE515214A5F730077415C /* GrowingHTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 182AE50B214A5F730077415C /* GrowingHTTPRedirectResponse.m */; };
+		182AE51D214A5F960077415C /* GrowingDDData.h in Headers */ = {isa = PBXBuildFile; fileRef = 182AE517214A5F950077415C /* GrowingDDData.h */; };
+		182AE51E214A5F960077415C /* GrowingDDRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 182AE518214A5F950077415C /* GrowingDDRange.h */; };
+		182AE51F214A5F960077415C /* GrowingDDNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 182AE519214A5F950077415C /* GrowingDDNumber.h */; };
+		182AE520214A5F960077415C /* GrowingDDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 182AE51A214A5F960077415C /* GrowingDDRange.m */; };
+		182AE522214A5F960077415C /* GrowingDDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 182AE51C214A5F960077415C /* GrowingDDData.m */; };
+		183D8FFE226ABB1100C217F8 /* GrowingEventBus.h in Headers */ = {isa = PBXBuildFile; fileRef = 183D8FFC226ABB1100C217F8 /* GrowingEventBus.h */; };
+		183D8FFF226ABB1100C217F8 /* GrowingEventBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D8FFD226ABB1100C217F8 /* GrowingEventBus.m */; };
+		183D9013226AC8BF00C217F8 /* GrowingEBEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 183D9011226AC8BF00C217F8 /* GrowingEBEvent.h */; };
+		183D9014226AC8BF00C217F8 /* GrowingEBEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D9012226AC8BF00C217F8 /* GrowingEBEvent.m */; };
+		183D9017226ACA4900C217F8 /* GrowingEBTrackSelfEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 183D9015226ACA4900C217F8 /* GrowingEBTrackSelfEvent.h */; };
+		183D9018226ACA4900C217F8 /* GrowingEBTrackSelfEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D9016226ACA4900C217F8 /* GrowingEBTrackSelfEvent.m */; };
+		184303032269E72A008518EE /* GrowingEventBusMethodMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 184303012269E72A008518EE /* GrowingEventBusMethodMap.h */; };
+		184303042269E72A008518EE /* GrowingEventBusMethodMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 184303022269E72A008518EE /* GrowingEventBusMethodMap.m */; };
+		186DC67D23966399002C0D52 /* GrowingCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1875FB0220909B380019AED3 /* GrowingCoreKit.framework */; };
+		1885085122C61A7C00AC65A7 /* UIScene+Growing.h in Headers */ = {isa = PBXBuildFile; fileRef = 1885084F22C61A7C00AC65A7 /* UIScene+Growing.h */; };
+		1885085222C61A7C00AC65A7 /* UIScene+Growing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1885085022C61A7C00AC65A7 /* UIScene+Growing.m */; };
+		188A5C2C20A9674D00E9B4A7 /* GrowingCoreKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 188A5C2A20A9674D00E9B4A7 /* GrowingCoreKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		188A5C2D20A9674D00E9B4A7 /* GrowingCoreKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 188A5C2B20A9674D00E9B4A7 /* GrowingCoreKit.m */; };
+		188A5C3720A96E8900E9B4A7 /* GrowingHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 188A5C3620A96E8900E9B4A7 /* GrowingHelpers.h */; };
+		18904FEB20A6F65D00C99C6D /* GrowingGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 18904FE920A6F65D00C99C6D /* GrowingGlobal.m */; };
+		18904FEC20A6F65D00C99C6D /* GrowingGlobal.h in Headers */ = {isa = PBXBuildFile; fileRef = 18904FEA20A6F65D00C99C6D /* GrowingGlobal.h */; };
+		18904FEF20A6F66700C99C6D /* GrowingAttributesConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 18904FED20A6F66700C99C6D /* GrowingAttributesConst.m */; };
+		18904FF020A6F66700C99C6D /* GrowingAttributesConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 18904FEE20A6F66700C99C6D /* GrowingAttributesConst.h */; };
+		18904FF320A6F67000C99C6D /* GrowingWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 18904FF120A6F66F00C99C6D /* GrowingWindow.h */; };
+		18904FF420A6F67000C99C6D /* GrowingWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 18904FF220A6F67000C99C6D /* GrowingWindow.m */; };
+		18904FFA20A6F6D500C99C6D /* GrowingUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 18904FF620A6F6D500C99C6D /* GrowingUserDefaults.h */; };
+		18904FFB20A6F6D500C99C6D /* Growing.pch in Headers */ = {isa = PBXBuildFile; fileRef = 18904FF720A6F6D500C99C6D /* Growing.pch */; };
+		18904FFC20A6F6D500C99C6D /* GrowingUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 18904FF820A6F6D500C99C6D /* GrowingUserDefaults.m */; };
+		18904FFD20A6F6D500C99C6D /* EXTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 18904FF920A6F6D500C99C6D /* EXTScope.h */; };
+		1890500120A6F85500C99C6D /* NSDictionary+GrowingDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 18904FFF20A6F85500C99C6D /* NSDictionary+GrowingDebug.m */; };
+		1890500220A6F85500C99C6D /* NSDictionary+GrowingDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890500020A6F85500C99C6D /* NSDictionary+GrowingDebug.h */; };
+		1890501320A6F8B600C99C6D /* GrowingDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890500420A6F8B500C99C6D /* GrowingDeviceInfo.m */; };
+		1890501420A6F8B600C99C6D /* GrowingManualTrackEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890500520A6F8B500C99C6D /* GrowingManualTrackEvent.h */; };
+		1890501520A6F8B600C99C6D /* GrowingEventManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890500620A6F8B500C99C6D /* GrowingEventManager.h */; };
+		1890501620A6F8B600C99C6D /* GrowingCustomField.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890500720A6F8B500C99C6D /* GrowingCustomField.h */; };
+		1890501720A6F8B600C99C6D /* GrowingEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890500820A6F8B500C99C6D /* GrowingEvent.m */; };
+		1890501820A6F8B600C99C6D /* GrowingEventDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890500920A6F8B500C99C6D /* GrowingEventDataBase.m */; };
+		1890501920A6F8B600C99C6D /* GrowingAddEventContextProtocal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890500A20A6F8B500C99C6D /* GrowingAddEventContextProtocal.h */; };
+		1890501B20A6F8B600C99C6D /* GrowingManualTrackEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890500C20A6F8B500C99C6D /* GrowingManualTrackEvent.m */; };
+		1890501C20A6F8B600C99C6D /* GrowingDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890500D20A6F8B500C99C6D /* GrowingDeviceInfo.h */; };
+		1890501D20A6F8B600C99C6D /* GrowingEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890500E20A6F8B500C99C6D /* GrowingEventManager.m */; };
+		1890501E20A6F8B600C99C6D /* GrowingEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890500F20A6F8B500C99C6D /* GrowingEvent.h */; };
+		1890501F20A6F8B600C99C6D /* GrowingEventDataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890501020A6F8B500C99C6D /* GrowingEventDataBase.h */; };
+		1890502020A6F8B600C99C6D /* GrowingCustomField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890501120A6F8B500C99C6D /* GrowingCustomField.m */; };
+		1890504720A6FA2200C99C6D /* NSData+GrowingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890502720A6FA2200C99C6D /* NSData+GrowingHelper.h */; };
+		1890504820A6FA2200C99C6D /* NSObject+GrowingIvarHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890502820A6FA2200C99C6D /* NSObject+GrowingIvarHelper.h */; };
+		1890504920A6FA2200C99C6D /* NSNumber+GrowingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890502920A6FA2200C99C6D /* NSNumber+GrowingHelper.h */; };
+		1890504A20A6FA2200C99C6D /* NSDictionary+GrowingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890502A20A6FA2200C99C6D /* NSDictionary+GrowingHelper.h */; };
+		1890504B20A6FA2200C99C6D /* UIControl+GrowingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890502B20A6FA2200C99C6D /* UIControl+GrowingHelper.h */; };
+		1890504C20A6FA2200C99C6D /* NSURL+GrowingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890502C20A6FA2200C99C6D /* NSURL+GrowingHelper.m */; };
+		1890504D20A6FA2200C99C6D /* UIView+GrowingHelperLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890502D20A6FA2200C99C6D /* UIView+GrowingHelperLayout.h */; };
+		1890504E20A6FA2200C99C6D /* UIImage+GrowingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890502E20A6FA2200C99C6D /* UIImage+GrowingHelper.h */; };
+		1890504F20A6FA2200C99C6D /* NSString+GrowingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890502F20A6FA2200C99C6D /* NSString+GrowingHelper.h */; };
+		1890505020A6FA2200C99C6D /* UIView+GrowingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890503020A6FA2200C99C6D /* UIView+GrowingHelper.h */; };
+		1890505120A6FA2200C99C6D /* UITextField+GrowingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890503120A6FA2200C99C6D /* UITextField+GrowingHelper.m */; };
+		1890505220A6FA2200C99C6D /* NSObject+GrowingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890503220A6FA2200C99C6D /* NSObject+GrowingHelper.h */; };
+		1890505320A6FA2200C99C6D /* NSArray+GrowingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890503320A6FA2200C99C6D /* NSArray+GrowingHelper.h */; };
+		1890505420A6FA2200C99C6D /* UIWindow+GrowingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890503420A6FA2200C99C6D /* UIWindow+GrowingHelper.h */; };
+		1890505520A6FA2200C99C6D /* UIApplication+GrowingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890503520A6FA2200C99C6D /* UIApplication+GrowingHelper.h */; };
+		1890505620A6FA2200C99C6D /* GrowingDispatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890503620A6FA2200C99C6D /* GrowingDispatchManager.m */; };
+		1890505720A6FA2200C99C6D /* NSNumber+GrowingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890503720A6FA2200C99C6D /* NSNumber+GrowingHelper.m */; };
+		1890505820A6FA2200C99C6D /* NSObject+GrowingIvarHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890503820A6FA2200C99C6D /* NSObject+GrowingIvarHelper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1890505920A6FA2200C99C6D /* NSData+GrowingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890503920A6FA2200C99C6D /* NSData+GrowingHelper.m */; };
+		1890505A20A6FA2200C99C6D /* UITextField+GrowingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890503A20A6FA2200C99C6D /* UITextField+GrowingHelper.h */; };
+		1890505B20A6FA2200C99C6D /* UIView+GrowingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890503B20A6FA2200C99C6D /* UIView+GrowingHelper.m */; };
+		1890505C20A6FA2200C99C6D /* UIImage+GrowingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890503C20A6FA2200C99C6D /* UIImage+GrowingHelper.m */; };
+		1890505D20A6FA2200C99C6D /* NSString+GrowingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890503D20A6FA2200C99C6D /* NSString+GrowingHelper.m */; };
+		1890505E20A6FA2200C99C6D /* UIView+GrowingHelperLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890503E20A6FA2200C99C6D /* UIView+GrowingHelperLayout.m */; };
+		1890505F20A6FA2200C99C6D /* NSURL+GrowingHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890503F20A6FA2200C99C6D /* NSURL+GrowingHelper.h */; };
+		1890506020A6FA2200C99C6D /* UIControl+GrowingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890504020A6FA2200C99C6D /* UIControl+GrowingHelper.m */; };
+		1890506120A6FA2200C99C6D /* NSDictionary+GrowingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890504120A6FA2200C99C6D /* NSDictionary+GrowingHelper.m */; };
+		1890506220A6FA2200C99C6D /* UIWindow+GrowingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890504220A6FA2200C99C6D /* UIWindow+GrowingHelper.m */; };
+		1890506320A6FA2200C99C6D /* NSArray+GrowingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890504320A6FA2200C99C6D /* NSArray+GrowingHelper.m */; };
+		1890506420A6FA2200C99C6D /* NSObject+GrowingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890504420A6FA2200C99C6D /* NSObject+GrowingHelper.m */; };
+		1890506520A6FA2200C99C6D /* GrowingDispatchManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890504520A6FA2200C99C6D /* GrowingDispatchManager.h */; };
+		1890506620A6FA2200C99C6D /* UIApplication+GrowingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890504620A6FA2200C99C6D /* UIApplication+GrowingHelper.m */; };
+		1890509120A6FAB600C99C6D /* NSArray+MASG3Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890506920A6FAB500C99C6D /* NSArray+MASG3Additions.m */; };
+		1890509220A6FAB600C99C6D /* NSArray+MASG3ShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890506A20A6FAB500C99C6D /* NSArray+MASG3ShorthandAdditions.h */; };
+		1890509320A6FAB600C99C6D /* ViewController+MASG3Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890506B20A6FAB500C99C6D /* ViewController+MASG3Additions.m */; };
+		1890509420A6FAB600C99C6D /* MASG3ViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890506C20A6FAB500C99C6D /* MASG3ViewConstraint.h */; };
+		1890509520A6FAB600C99C6D /* MASG3ViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890506D20A6FAB500C99C6D /* MASG3ViewAttribute.h */; };
+		1890509620A6FAB600C99C6D /* MASG3Constraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890506E20A6FAB500C99C6D /* MASG3Constraint+Private.h */; };
+		1890509720A6FAB600C99C6D /* MASG3Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890506F20A6FAB500C99C6D /* MASG3Utilities.h */; };
+		1890509820A6FAB600C99C6D /* MASG3ConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890507020A6FAB500C99C6D /* MASG3ConstraintMaker.h */; };
+		1890509920A6FAB600C99C6D /* MASG3CompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890507120A6FAB500C99C6D /* MASG3CompositeConstraint.h */; };
+		1890509A20A6FAB600C99C6D /* MASG3LayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890507220A6FAB500C99C6D /* MASG3LayoutConstraint.m */; };
+		1890509B20A6FAB600C99C6D /* View+MASG3Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890507320A6FAB500C99C6D /* View+MASG3Additions.m */; };
+		1890509C20A6FAB600C99C6D /* MASG3Constraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890507420A6FAB500C99C6D /* MASG3Constraint.m */; };
+		1890509D20A6FAB600C99C6D /* NSLayoutConstraint+MASG3DebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890507520A6FAB500C99C6D /* NSLayoutConstraint+MASG3DebugAdditions.m */; };
+		1890509E20A6FAB600C99C6D /* MasonryGrowing3rd.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890507620A6FAB500C99C6D /* MasonryGrowing3rd.h */; };
+		1890509F20A6FAB600C99C6D /* MASG3ViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890507720A6FAB500C99C6D /* MASG3ViewAttribute.m */; };
+		189050A020A6FAB600C99C6D /* ViewController+MASG3Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890507820A6FAB500C99C6D /* ViewController+MASG3Additions.h */; };
+		189050A120A6FAB600C99C6D /* MASG3ViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890507920A6FAB500C99C6D /* MASG3ViewConstraint.m */; };
+		189050A220A6FAB600C99C6D /* NSArray+MASG3Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890507A20A6FAB500C99C6D /* NSArray+MASG3Additions.h */; };
+		189050A320A6FAB600C99C6D /* MASG3CompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890507B20A6FAB500C99C6D /* MASG3CompositeConstraint.m */; };
+		189050A420A6FAB600C99C6D /* MASG3ConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890507C20A6FAB500C99C6D /* MASG3ConstraintMaker.m */; };
+		189050A520A6FAB600C99C6D /* View+MASG3ShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890507D20A6FAB500C99C6D /* View+MASG3ShorthandAdditions.h */; };
+		189050A620A6FAB600C99C6D /* NSLayoutConstraint+MASG3DebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890507E20A6FAB500C99C6D /* NSLayoutConstraint+MASG3DebugAdditions.h */; };
+		189050A720A6FAB600C99C6D /* MASG3Constraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890507F20A6FAB500C99C6D /* MASG3Constraint.h */; };
+		189050A820A6FAB600C99C6D /* View+MASG3Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890508020A6FAB500C99C6D /* View+MASG3Additions.h */; };
+		189050A920A6FAB600C99C6D /* MASG3LayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890508120A6FAB500C99C6D /* MASG3LayoutConstraint.h */; };
+		189050AA20A6FAB600C99C6D /* GrowingReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890508320A6FAB500C99C6D /* GrowingReachability.h */; };
+		189050AB20A6FAB600C99C6D /* GrowingReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890508420A6FAB500C99C6D /* GrowingReachability.m */; };
+		189050AC20A6FAB600C99C6D /* FMG3ResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890508620A6FAB500C99C6D /* FMG3ResultSet.h */; };
+		189050AD20A6FAB600C99C6D /* FMG3DatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890508720A6FAB500C99C6D /* FMG3DatabaseAdditions.m */; };
+		189050AE20A6FAB600C99C6D /* FMG3DatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890508820A6FAB500C99C6D /* FMG3DatabaseQueue.m */; };
+		189050AF20A6FAB600C99C6D /* FMG3Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890508920A6FAB500C99C6D /* FMG3Database.m */; };
+		189050B020A6FAB600C99C6D /* FMG3DatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890508A20A6FAB500C99C6D /* FMG3DatabasePool.h */; };
+		189050B120A6FAB600C99C6D /* FMG3DatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890508B20A6FAB500C99C6D /* FMG3DatabaseAdditions.h */; };
+		189050B220A6FAB600C99C6D /* FMG3ResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890508C20A6FAB500C99C6D /* FMG3ResultSet.m */; };
+		189050B320A6FAB600C99C6D /* FMG3Database.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890508D20A6FAB500C99C6D /* FMG3Database.h */; };
+		189050B420A6FAB600C99C6D /* FMG3DatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890508E20A6FAB500C99C6D /* FMG3DatabaseQueue.h */; };
+		189050B620A6FAB600C99C6D /* FMDBG3.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890509020A6FAB500C99C6D /* FMDBG3.h */; };
+		189050BC20A6FAF300C99C6D /* GrowingMediator+GrowingDeepLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 189050B820A6FAF200C99C6D /* GrowingMediator+GrowingDeepLink.m */; };
+		189050BD20A6FAF300C99C6D /* GrowingMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 189050B920A6FAF200C99C6D /* GrowingMediator.m */; };
+		189050BE20A6FAF300C99C6D /* GrowingMediator+GrowingDeepLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 189050BA20A6FAF200C99C6D /* GrowingMediator+GrowingDeepLink.h */; };
+		189050BF20A6FAF300C99C6D /* GrowingMediator.h in Headers */ = {isa = PBXBuildFile; fileRef = 189050BB20A6FAF200C99C6D /* GrowingMediator.h */; };
+		189050D120A6FFE300C99C6D /* GrowingStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 189050C120A6FFE300C99C6D /* GrowingStatusBar.m */; };
+		189050D220A6FFE300C99C6D /* GrowingMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 189050C220A6FFE300C99C6D /* GrowingMenu.m */; };
+		189050D320A6FFE300C99C6D /* GrowingAlertMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 189050C320A6FFE300C99C6D /* GrowingAlertMenu.h */; };
+		189050D520A6FFE300C99C6D /* GrowingMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 189050C520A6FFE300C99C6D /* GrowingMenuView.h */; };
+		189050D620A6FFE300C99C6D /* GrowingKeyBoardToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 189050C620A6FFE300C99C6D /* GrowingKeyBoardToolBar.m */; };
+		189050D720A6FFE300C99C6D /* GrowingHelperMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 189050C720A6FFE300C99C6D /* GrowingHelperMenu.m */; };
+		189050D920A6FFE300C99C6D /* GrowingKeyBoardToolBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 189050C920A6FFE300C99C6D /* GrowingKeyBoardToolBar.h */; };
+		189050DA20A6FFE300C99C6D /* GrowingMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 189050CA20A6FFE300C99C6D /* GrowingMenuView.m */; };
+		189050DC20A6FFE300C99C6D /* GrowingAlertMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 189050CC20A6FFE300C99C6D /* GrowingAlertMenu.m */; };
+		189050DD20A6FFE300C99C6D /* GrowingMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 189050CD20A6FFE300C99C6D /* GrowingMenu.h */; };
+		189050DE20A6FFE300C99C6D /* GrowingStatusBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 189050CE20A6FFE300C99C6D /* GrowingStatusBar.h */; };
+		189050E020A6FFE300C99C6D /* GrowingHelperMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 189050D020A6FFE300C99C6D /* GrowingHelperMenu.h */; };
+		1890510120A7010600C99C6D /* GROW_KDNetworkInterfaceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 189050EB20A7010600C99C6D /* GROW_KDNetworkInterfaceManager.m */; };
+		1890510220A7010600C99C6D /* Growing3rdLibSRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 189050ED20A7010600C99C6D /* Growing3rdLibSRWebSocket.m */; };
+		1890510320A7010600C99C6D /* Growing3rdLibSRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 189050EE20A7010600C99C6D /* Growing3rdLibSRWebSocket.h */; };
+		1890510420A7010600C99C6D /* Growing3rdLibSocketRocket-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 189050EF20A7010600C99C6D /* Growing3rdLibSocketRocket-Prefix.pch */; };
+		1890510520A7010600C99C6D /* lz4.h in Headers */ = {isa = PBXBuildFile; fileRef = 189050F120A7010600C99C6D /* lz4.h */; };
+		1890510620A7010600C99C6D /* lz4.c in Sources */ = {isa = PBXBuildFile; fileRef = 189050F220A7010600C99C6D /* lz4.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		1890510720A7010600C99C6D /* GrowingEventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 189050F420A7010600C99C6D /* GrowingEventModel.m */; };
+		1890510820A7010600C99C6D /* GrowingNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 189050F520A7010600C99C6D /* GrowingNetworkConfig.m */; };
+		1890510A20A7010600C99C6D /* GrowingBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 189050F720A7010600C99C6D /* GrowingBaseModel.h */; };
+		1890510B20A7010600C99C6D /* GrowingEventModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 189050F820A7010600C99C6D /* GrowingEventModel.h */; };
+		1890510C20A7010600C99C6D /* GrowingNetworkConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 189050F920A7010600C99C6D /* GrowingNetworkConfig.h */; };
+		1890510D20A7010600C99C6D /* GrowingBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 189050FA20A7010600C99C6D /* GrowingBaseModel.m */; };
+		1890510F20A7010600C99C6D /* GrowingMobileDebugger.m in Sources */ = {isa = PBXBuildFile; fileRef = 189050FC20A7010600C99C6D /* GrowingMobileDebugger.m */; };
+		1890511120A7010600C99C6D /* GROW_KDNetworkInterfaceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 189050FE20A7010600C99C6D /* GROW_KDNetworkInterfaceManager.h */; };
+		1890511220A7010600C99C6D /* GrowingMobileDebugger.h in Headers */ = {isa = PBXBuildFile; fileRef = 189050FF20A7010600C99C6D /* GrowingMobileDebugger.h */; };
+		1890512920A7023300C99C6D /* GrowingEventCounter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890511F20A7023200C99C6D /* GrowingEventCounter.h */; };
+		1890512A20A7023300C99C6D /* GrowingInstance.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890512020A7023200C99C6D /* GrowingInstance.h */; };
+		1890512C20A7023300C99C6D /* GrowingInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890512220A7023200C99C6D /* GrowingInstance.m */; };
+		1890514B20A7036F00C99C6D /* FoObjectSELObserverMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890513620A7036F00C99C6D /* FoObjectSELObserverMacro.h */; };
+		1890514D20A7036F00C99C6D /* GrowingCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890513820A7036F00C99C6D /* GrowingCategory.h */; };
+		1890514E20A7036F00C99C6D /* FoAspectMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890513920A7036F00C99C6D /* FoAspectMacro.h */; };
+		1890514F20A7036F00C99C6D /* FoAspect.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890513A20A7036F00C99C6D /* FoAspect.h */; };
+		1890515020A7036F00C99C6D /* G3fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890513B20A7036F00C99C6D /* G3fishhook.h */; };
+		1890515120A7036F00C99C6D /* GrowingAspect.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890513C20A7036F00C99C6D /* GrowingAspect.h */; };
+		1890515220A7036F00C99C6D /* FoDelegateSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890513D20A7036F00C99C6D /* FoDelegateSwizzling.h */; };
+		1890515320A7036F00C99C6D /* FoAspectPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890513E20A7036F00C99C6D /* FoAspectPrivate.h */; };
+		1890515420A7036F00C99C6D /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890513F20A7036F00C99C6D /* metamacros.h */; };
+		1890515520A7036F00C99C6D /* FoSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890514020A7036F00C99C6D /* FoSwizzling.m */; };
+		1890515620A7036F00C99C6D /* FoObjectSELObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890514120A7036F00C99C6D /* FoObjectSELObserver.m */; };
+		1890515720A7036F00C99C6D /* FoWeakObjectShell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890514220A7036F00C99C6D /* FoWeakObjectShell.h */; };
+		1890515920A7036F00C99C6D /* FoAspect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890514420A7036F00C99C6D /* FoAspect.m */; };
+		1890515A20A7036F00C99C6D /* GrowingAspect.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890514520A7036F00C99C6D /* GrowingAspect.m */; };
+		1890515B20A7036F00C99C6D /* G3fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 1890514620A7036F00C99C6D /* G3fishhook.c */; };
+		1890515C20A7036F00C99C6D /* FoWeakObjectShell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890514720A7036F00C99C6D /* FoWeakObjectShell.m */; };
+		1890515D20A7036F00C99C6D /* FoDefineProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890514820A7036F00C99C6D /* FoDefineProperty.h */; };
+		1890515E20A7036F00C99C6D /* FoObjectSELObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890514920A7036F00C99C6D /* FoObjectSELObserver.h */; };
+		1890515F20A7036F00C99C6D /* FoSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890514A20A7036F00C99C6D /* FoSwizzling.h */; };
+		1890516520A7039B00C99C6D /* GrowingDataHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890516120A7039B00C99C6D /* GrowingDataHeader.h */; };
+		1890516620A7039B00C99C6D /* GrowingUIConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1890516220A7039B00C99C6D /* GrowingUIConfig.m */; };
+		1890516720A7039B00C99C6D /* GrowingUIConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890516320A7039B00C99C6D /* GrowingUIConfig.h */; };
+		1890516820A7039B00C99C6D /* GrowingUIHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890516420A7039B00C99C6D /* GrowingUIHeader.h */; };
+		1890516A20A7047900C99C6D /* FoAspectBody.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890516920A7047800C99C6D /* FoAspectBody.h */; };
+		18A6487823968A4D00C367C2 /* MediatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A6487723968A4D00C367C2 /* MediatorTest.m */; };
+		18A6487A2397528500C367C2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A648792397528500C367C2 /* libsqlite3.tbd */; };
+		18CFA85E20A40240004E3681 /* GrowingNodeProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 18CFA85D20A40240004E3681 /* GrowingNodeProtocol.h */; };
+		18CFA86B20A40699004E3681 /* UIApplication+GrowingNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 18CFA86720A40699004E3681 /* UIApplication+GrowingNode.h */; };
+		18CFA86C20A40699004E3681 /* UIApplication+Growing.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFA86820A40699004E3681 /* UIApplication+Growing.m */; };
+		18CFA86D20A40699004E3681 /* UIApplication+GrowingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFA86920A40699004E3681 /* UIApplication+GrowingNode.m */; };
+		18CFA86E20A40699004E3681 /* UIApplication+Growing.h in Headers */ = {isa = PBXBuildFile; fileRef = 18CFA86A20A40699004E3681 /* UIApplication+Growing.h */; };
+		18CFCC7C2283E43E0022291D /* GrowingEBApplicationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 18CFCC7A2283E43E0022291D /* GrowingEBApplicationEvent.h */; };
+		18CFCC7D2283E43E0022291D /* GrowingEBApplicationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFCC7B2283E43E0022291D /* GrowingEBApplicationEvent.m */; };
+		18CFCC84228437230022291D /* GrowingEBVCLifeEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 18CFCC82228437230022291D /* GrowingEBVCLifeEvent.h */; };
+		18CFCC85228437230022291D /* GrowingEBVCLifeEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFCC83228437230022291D /* GrowingEBVCLifeEvent.m */; };
+		18E3C80523262B3D003EFAEA /* GrowingVersionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 18E3C80323262B3D003EFAEA /* GrowingVersionManager.h */; };
+		18E3C80623262B3D003EFAEA /* GrowingVersionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3C80423262B3D003EFAEA /* GrowingVersionManager.m */; };
+		347EAC6F2BDA058A0000E453 /* GrowingNetworkPreflight.h in Headers */ = {isa = PBXBuildFile; fileRef = 347EAC6D2BDA058A0000E453 /* GrowingNetworkPreflight.h */; };
+		347EAC702BDA058A0000E453 /* GrowingNetworkPreflight.m in Sources */ = {isa = PBXBuildFile; fileRef = 347EAC6E2BDA058A0000E453 /* GrowingNetworkPreflight.m */; };
+		34A88063267B439D00B51F8D /* GrowingDDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 182AE51B214A5F960077415C /* GrowingDDNumber.m */; };
+		34ACBFBA2721703900ECF6A1 /* GrowingAsaFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 34ACBFB82721703900ECF6A1 /* GrowingAsaFetcher.h */; };
+		34ACBFBB2721703900ECF6A1 /* GrowingAsaFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 34ACBFB92721703900ECF6A1 /* GrowingAsaFetcher.m */; };
+		3FE2BA2A25FA23D30024E9F5 /* GrowingWKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE2BA2925FA23D30024E9F5 /* GrowingWKWebViewJavascriptBridge.m */; };
+		3FE2BA2D25FA24730024E9F5 /* GrowingWKWebViewJavascriptBridge_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE2BA2C25FA24730024E9F5 /* GrowingWKWebViewJavascriptBridge_JS.m */; };
+		3FE2BA3025FA25EA0024E9F5 /* GrowingWebViewJavascriptBridgeConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE2BA2F25FA25EA0024E9F5 /* GrowingWebViewJavascriptBridgeConfiguration.m */; };
+		3FE2BA3325FA26640024E9F5 /* GrowingWebViewJavascriptMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE2BA3225FA26640024E9F5 /* GrowingWebViewJavascriptMessage.m */; };
+		42009E5D22C4C61C008E876A /* GrowingEBUserIdEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 42009E5B22C4C61C008E876A /* GrowingEBUserIdEvent.h */; };
+		42009E5E22C4C61C008E876A /* GrowingEBUserIdEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 42009E5C22C4C61C008E876A /* GrowingEBUserIdEvent.m */; };
+		42009E6122C4CFDC008E876A /* GrowingEBManualTrackEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 42009E5F22C4CFDC008E876A /* GrowingEBManualTrackEvent.h */; };
+		42009E6222C4CFDC008E876A /* GrowingEBManualTrackEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 42009E6022C4CFDC008E876A /* GrowingEBManualTrackEvent.m */; };
+		4218AB0823C97C8100E53763 /* GrowingCoreDateTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4218AB0723C97C8100E53763 /* GrowingCoreDateTest.m */; };
+		42210FFF247E460100291115 /* GrowingFileStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 42210FFD247E460100291115 /* GrowingFileStore.h */; };
+		42211000247E460100291115 /* GrowingFileStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 42210FFE247E460100291115 /* GrowingFileStore.m */; };
+		4222B2E52473F28100EF5B60 /* GrowingASLLoggerFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 4222B2E32473F28100EF5B60 /* GrowingASLLoggerFormat.h */; };
+		4222B2E62473F28100EF5B60 /* GrowingASLLoggerFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 4222B2E42473F28100EF5B60 /* GrowingASLLoggerFormat.m */; };
+		422F36B9246295E500DFAFF3 /* GrowingWSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 422F36B7246295E500DFAFF3 /* GrowingWSLogger.h */; };
+		422F36BA246295E500DFAFF3 /* GrowingWSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 422F36B8246295E500DFAFF3 /* GrowingWSLogger.m */; };
+		429B6BC0244EC8520043F8D5 /* GrowingLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B6BA2244EC84F0043F8D5 /* GrowingLog.m */; };
+		429B6BC1244EC8520043F8D5 /* GrowingASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 429B6BA3244EC84F0043F8D5 /* GrowingASLLogger.h */; };
+		429B6BC4244EC8520043F8D5 /* GrowingTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 429B6BA6244EC8500043F8D5 /* GrowingTTYLogger.h */; };
+		429B6BC8244EC8520043F8D5 /* GrowingASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B6BAA244EC8500043F8D5 /* GrowingASLLogger.m */; };
+		429B6BC9244EC8520043F8D5 /* GrowingLoggerNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 429B6BAB244EC8500043F8D5 /* GrowingLoggerNames.h */; };
+		429B6BCC244EC8520043F8D5 /* GrowingLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 429B6BAE244EC8500043F8D5 /* GrowingLogMacros.h */; };
+		429B6BD1244EC8530043F8D5 /* GrowingLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 429B6BB3244EC8510043F8D5 /* GrowingLog.h */; };
+		429B6BD3244EC8530043F8D5 /* GrowingCocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = 429B6BB5244EC8510043F8D5 /* GrowingCocoaLumberjack.h */; };
+		429B6BD4244EC8530043F8D5 /* GrowingLoggerNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B6BB6244EC8510043F8D5 /* GrowingLoggerNames.m */; };
+		429B6BDA244EC8530043F8D5 /* GrowingTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B6BBC244EC8520043F8D5 /* GrowingTTYLogger.m */; };
+		494BF2AC238CED9F0050E014 /* GrowingEBMonitorEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 494BF2AA238CED9F0050E014 /* GrowingEBMonitorEvent.h */; };
+		494BF2AD238CED9F0050E014 /* GrowingEBMonitorEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 494BF2AB238CED9F0050E014 /* GrowingEBMonitorEvent.m */; };
+		4979EB9A243715A600A408C9 /* GrowingActivateEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4979EB98243715A600A408C9 /* GrowingActivateEvent.h */; };
+		4979EB9B243715A600A408C9 /* GrowingActivateEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4979EB99243715A600A408C9 /* GrowingActivateEvent.m */; };
+		49EC075A243DB46300CD95BD /* GrowingEventCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EC0759243DB46300CD95BD /* GrowingEventCounter.m */; };
+		89CD7E222D9E384954749B7C /* Pods_GrowingCoreKitUnitTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16182D2AE9330C4C65E22A8D /* Pods_GrowingCoreKitUnitTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		186DC67E23966399002C0D52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1875FAF920909B380019AED3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1875FB0120909B380019AED3;
+			remoteInfo = GrowingCoreKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16182D2AE9330C4C65E22A8D /* Pods_GrowingCoreKitUnitTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrowingCoreKitUnitTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1817BAEC22E801CD0000FD1C /* GrowingDeepLinkModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingDeepLinkModel.h; sourceTree = "<group>"; };
+		1817BAED22E801CD0000FD1C /* GrowingDeepLinkModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingDeepLinkModel.m; sourceTree = "<group>"; };
+		182AE4E4214A5F230077415C /* GrowingGCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingGCDAsyncSocket.h; sourceTree = "<group>"; };
+		182AE4E5214A5F230077415C /* GrowingGCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingGCDAsyncSocket.m; sourceTree = "<group>"; };
+		182AE4E9214A5F4C0077415C /* GrowingHTTPAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingHTTPAuthenticationRequest.m; sourceTree = "<group>"; };
+		182AE4EA214A5F4C0077415C /* GrowingHTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingHTTPServer.h; sourceTree = "<group>"; };
+		182AE4EB214A5F4C0077415C /* GrowingHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingHTTPConnection.m; sourceTree = "<group>"; };
+		182AE4EC214A5F4C0077415C /* GrowingWebSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingWebSocketServer.m; sourceTree = "<group>"; };
+		182AE4ED214A5F4C0077415C /* GrowingHTTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingHTTPMessage.m; sourceTree = "<group>"; };
+		182AE4EE214A5F4C0077415C /* GrowingHTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingHTTPServer.m; sourceTree = "<group>"; };
+		182AE4EF214A5F4D0077415C /* GrowingHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingHTTPResponse.h; sourceTree = "<group>"; };
+		182AE4F0214A5F4D0077415C /* GrowingHTTPAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingHTTPAuthenticationRequest.h; sourceTree = "<group>"; };
+		182AE4F1214A5F4D0077415C /* GrowingHTTPLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingHTTPLogging.h; sourceTree = "<group>"; };
+		182AE4F2214A5F4D0077415C /* GrowingWebSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingWebSocketServer.h; sourceTree = "<group>"; };
+		182AE4F3214A5F4D0077415C /* GrowingHTTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingHTTPMessage.h; sourceTree = "<group>"; };
+		182AE4F4214A5F4D0077415C /* GrowingHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingHTTPConnection.h; sourceTree = "<group>"; };
+		182AE502214A5F720077415C /* GrowingHTTPFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingHTTPFileResponse.m; sourceTree = "<group>"; };
+		182AE503214A5F720077415C /* GrowingHTTPDynamicFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingHTTPDynamicFileResponse.m; sourceTree = "<group>"; };
+		182AE504214A5F720077415C /* GrowingHTTPDynamicFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingHTTPDynamicFileResponse.h; sourceTree = "<group>"; };
+		182AE505214A5F720077415C /* GrowingHTTPDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingHTTPDataResponse.h; sourceTree = "<group>"; };
+		182AE506214A5F720077415C /* GrowingHTTPDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingHTTPDataResponse.m; sourceTree = "<group>"; };
+		182AE507214A5F720077415C /* GrowingHTTPAsyncFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingHTTPAsyncFileResponse.h; sourceTree = "<group>"; };
+		182AE508214A5F720077415C /* GrowingHTTPFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingHTTPFileResponse.h; sourceTree = "<group>"; };
+		182AE509214A5F720077415C /* GrowingHTTPRedirectResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingHTTPRedirectResponse.h; sourceTree = "<group>"; };
+		182AE50A214A5F730077415C /* GrowingHTTPAsyncFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingHTTPAsyncFileResponse.m; sourceTree = "<group>"; };
+		182AE50B214A5F730077415C /* GrowingHTTPRedirectResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingHTTPRedirectResponse.m; sourceTree = "<group>"; };
+		182AE517214A5F950077415C /* GrowingDDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingDDData.h; sourceTree = "<group>"; };
+		182AE518214A5F950077415C /* GrowingDDRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingDDRange.h; sourceTree = "<group>"; };
+		182AE519214A5F950077415C /* GrowingDDNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingDDNumber.h; sourceTree = "<group>"; };
+		182AE51A214A5F960077415C /* GrowingDDRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingDDRange.m; sourceTree = "<group>"; };
+		182AE51B214A5F960077415C /* GrowingDDNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingDDNumber.m; sourceTree = "<group>"; };
+		182AE51C214A5F960077415C /* GrowingDDData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingDDData.m; sourceTree = "<group>"; };
+		183D8FFC226ABB1100C217F8 /* GrowingEventBus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingEventBus.h; sourceTree = "<group>"; };
+		183D8FFD226ABB1100C217F8 /* GrowingEventBus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingEventBus.m; sourceTree = "<group>"; };
+		183D9011226AC8BF00C217F8 /* GrowingEBEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingEBEvent.h; sourceTree = "<group>"; };
+		183D9012226AC8BF00C217F8 /* GrowingEBEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingEBEvent.m; sourceTree = "<group>"; };
+		183D9015226ACA4900C217F8 /* GrowingEBTrackSelfEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingEBTrackSelfEvent.h; sourceTree = "<group>"; };
+		183D9016226ACA4900C217F8 /* GrowingEBTrackSelfEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingEBTrackSelfEvent.m; sourceTree = "<group>"; };
+		184303012269E72A008518EE /* GrowingEventBusMethodMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingEventBusMethodMap.h; sourceTree = "<group>"; };
+		184303022269E72A008518EE /* GrowingEventBusMethodMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingEventBusMethodMap.m; sourceTree = "<group>"; };
+		186DC67823966399002C0D52 /* GrowingCoreKitUnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrowingCoreKitUnitTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		186DC67C23966399002C0D52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1875FB0220909B380019AED3 /* GrowingCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GrowingCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1875FB0620909B380019AED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1885084F22C61A7C00AC65A7 /* UIScene+Growing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScene+Growing.h"; sourceTree = "<group>"; };
+		1885085022C61A7C00AC65A7 /* UIScene+Growing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScene+Growing.m"; sourceTree = "<group>"; };
+		188A5C2A20A9674D00E9B4A7 /* GrowingCoreKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingCoreKit.h; sourceTree = "<group>"; };
+		188A5C2B20A9674D00E9B4A7 /* GrowingCoreKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingCoreKit.m; sourceTree = "<group>"; };
+		188A5C3620A96E8900E9B4A7 /* GrowingHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingHelpers.h; sourceTree = "<group>"; };
+		18904FE920A6F65D00C99C6D /* GrowingGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingGlobal.m; sourceTree = "<group>"; };
+		18904FEA20A6F65D00C99C6D /* GrowingGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingGlobal.h; sourceTree = "<group>"; };
+		18904FED20A6F66700C99C6D /* GrowingAttributesConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingAttributesConst.m; sourceTree = "<group>"; };
+		18904FEE20A6F66700C99C6D /* GrowingAttributesConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingAttributesConst.h; sourceTree = "<group>"; };
+		18904FF120A6F66F00C99C6D /* GrowingWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingWindow.h; sourceTree = "<group>"; };
+		18904FF220A6F67000C99C6D /* GrowingWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingWindow.m; sourceTree = "<group>"; };
+		18904FF620A6F6D500C99C6D /* GrowingUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingUserDefaults.h; sourceTree = "<group>"; };
+		18904FF720A6F6D500C99C6D /* Growing.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Growing.pch; sourceTree = "<group>"; };
+		18904FF820A6F6D500C99C6D /* GrowingUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingUserDefaults.m; sourceTree = "<group>"; };
+		18904FF920A6F6D500C99C6D /* EXTScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
+		18904FFF20A6F85500C99C6D /* NSDictionary+GrowingDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+GrowingDebug.m"; sourceTree = "<group>"; };
+		1890500020A6F85500C99C6D /* NSDictionary+GrowingDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+GrowingDebug.h"; sourceTree = "<group>"; };
+		1890500420A6F8B500C99C6D /* GrowingDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingDeviceInfo.m; sourceTree = "<group>"; };
+		1890500520A6F8B500C99C6D /* GrowingManualTrackEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingManualTrackEvent.h; sourceTree = "<group>"; };
+		1890500620A6F8B500C99C6D /* GrowingEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingEventManager.h; sourceTree = "<group>"; };
+		1890500720A6F8B500C99C6D /* GrowingCustomField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingCustomField.h; sourceTree = "<group>"; };
+		1890500820A6F8B500C99C6D /* GrowingEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingEvent.m; sourceTree = "<group>"; };
+		1890500920A6F8B500C99C6D /* GrowingEventDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingEventDataBase.m; sourceTree = "<group>"; };
+		1890500A20A6F8B500C99C6D /* GrowingAddEventContextProtocal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingAddEventContextProtocal.h; sourceTree = "<group>"; };
+		1890500C20A6F8B500C99C6D /* GrowingManualTrackEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingManualTrackEvent.m; sourceTree = "<group>"; };
+		1890500D20A6F8B500C99C6D /* GrowingDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingDeviceInfo.h; sourceTree = "<group>"; };
+		1890500E20A6F8B500C99C6D /* GrowingEventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingEventManager.m; sourceTree = "<group>"; };
+		1890500F20A6F8B500C99C6D /* GrowingEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingEvent.h; sourceTree = "<group>"; };
+		1890501020A6F8B500C99C6D /* GrowingEventDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingEventDataBase.h; sourceTree = "<group>"; };
+		1890501120A6F8B500C99C6D /* GrowingCustomField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingCustomField.m; sourceTree = "<group>"; };
+		1890502720A6FA2200C99C6D /* NSData+GrowingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+GrowingHelper.h"; sourceTree = "<group>"; };
+		1890502820A6FA2200C99C6D /* NSObject+GrowingIvarHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GrowingIvarHelper.h"; sourceTree = "<group>"; };
+		1890502920A6FA2200C99C6D /* NSNumber+GrowingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+GrowingHelper.h"; sourceTree = "<group>"; };
+		1890502A20A6FA2200C99C6D /* NSDictionary+GrowingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+GrowingHelper.h"; sourceTree = "<group>"; };
+		1890502B20A6FA2200C99C6D /* UIControl+GrowingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+GrowingHelper.h"; sourceTree = "<group>"; };
+		1890502C20A6FA2200C99C6D /* NSURL+GrowingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+GrowingHelper.m"; sourceTree = "<group>"; };
+		1890502D20A6FA2200C99C6D /* UIView+GrowingHelperLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GrowingHelperLayout.h"; sourceTree = "<group>"; };
+		1890502E20A6FA2200C99C6D /* UIImage+GrowingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GrowingHelper.h"; sourceTree = "<group>"; };
+		1890502F20A6FA2200C99C6D /* NSString+GrowingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GrowingHelper.h"; sourceTree = "<group>"; };
+		1890503020A6FA2200C99C6D /* UIView+GrowingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GrowingHelper.h"; sourceTree = "<group>"; };
+		1890503120A6FA2200C99C6D /* UITextField+GrowingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+GrowingHelper.m"; sourceTree = "<group>"; };
+		1890503220A6FA2200C99C6D /* NSObject+GrowingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GrowingHelper.h"; sourceTree = "<group>"; };
+		1890503320A6FA2200C99C6D /* NSArray+GrowingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GrowingHelper.h"; sourceTree = "<group>"; };
+		1890503420A6FA2200C99C6D /* UIWindow+GrowingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+GrowingHelper.h"; sourceTree = "<group>"; };
+		1890503520A6FA2200C99C6D /* UIApplication+GrowingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+GrowingHelper.h"; sourceTree = "<group>"; };
+		1890503620A6FA2200C99C6D /* GrowingDispatchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingDispatchManager.m; sourceTree = "<group>"; };
+		1890503720A6FA2200C99C6D /* NSNumber+GrowingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+GrowingHelper.m"; sourceTree = "<group>"; };
+		1890503820A6FA2200C99C6D /* NSObject+GrowingIvarHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GrowingIvarHelper.m"; sourceTree = "<group>"; };
+		1890503920A6FA2200C99C6D /* NSData+GrowingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+GrowingHelper.m"; sourceTree = "<group>"; };
+		1890503A20A6FA2200C99C6D /* UITextField+GrowingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+GrowingHelper.h"; sourceTree = "<group>"; };
+		1890503B20A6FA2200C99C6D /* UIView+GrowingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GrowingHelper.m"; sourceTree = "<group>"; };
+		1890503C20A6FA2200C99C6D /* UIImage+GrowingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GrowingHelper.m"; sourceTree = "<group>"; };
+		1890503D20A6FA2200C99C6D /* NSString+GrowingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GrowingHelper.m"; sourceTree = "<group>"; };
+		1890503E20A6FA2200C99C6D /* UIView+GrowingHelperLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GrowingHelperLayout.m"; sourceTree = "<group>"; };
+		1890503F20A6FA2200C99C6D /* NSURL+GrowingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+GrowingHelper.h"; sourceTree = "<group>"; };
+		1890504020A6FA2200C99C6D /* UIControl+GrowingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+GrowingHelper.m"; sourceTree = "<group>"; };
+		1890504120A6FA2200C99C6D /* NSDictionary+GrowingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+GrowingHelper.m"; sourceTree = "<group>"; };
+		1890504220A6FA2200C99C6D /* UIWindow+GrowingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+GrowingHelper.m"; sourceTree = "<group>"; };
+		1890504320A6FA2200C99C6D /* NSArray+GrowingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GrowingHelper.m"; sourceTree = "<group>"; };
+		1890504420A6FA2200C99C6D /* NSObject+GrowingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GrowingHelper.m"; sourceTree = "<group>"; };
+		1890504520A6FA2200C99C6D /* GrowingDispatchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingDispatchManager.h; sourceTree = "<group>"; };
+		1890504620A6FA2200C99C6D /* UIApplication+GrowingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+GrowingHelper.m"; sourceTree = "<group>"; };
+		1890506920A6FAB500C99C6D /* NSArray+MASG3Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASG3Additions.m"; sourceTree = "<group>"; };
+		1890506A20A6FAB500C99C6D /* NSArray+MASG3ShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASG3ShorthandAdditions.h"; sourceTree = "<group>"; };
+		1890506B20A6FAB500C99C6D /* ViewController+MASG3Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASG3Additions.m"; sourceTree = "<group>"; };
+		1890506C20A6FAB500C99C6D /* MASG3ViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASG3ViewConstraint.h; sourceTree = "<group>"; };
+		1890506D20A6FAB500C99C6D /* MASG3ViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASG3ViewAttribute.h; sourceTree = "<group>"; };
+		1890506E20A6FAB500C99C6D /* MASG3Constraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASG3Constraint+Private.h"; sourceTree = "<group>"; };
+		1890506F20A6FAB500C99C6D /* MASG3Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASG3Utilities.h; sourceTree = "<group>"; };
+		1890507020A6FAB500C99C6D /* MASG3ConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASG3ConstraintMaker.h; sourceTree = "<group>"; };
+		1890507120A6FAB500C99C6D /* MASG3CompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASG3CompositeConstraint.h; sourceTree = "<group>"; };
+		1890507220A6FAB500C99C6D /* MASG3LayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASG3LayoutConstraint.m; sourceTree = "<group>"; };
+		1890507320A6FAB500C99C6D /* View+MASG3Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASG3Additions.m"; sourceTree = "<group>"; };
+		1890507420A6FAB500C99C6D /* MASG3Constraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASG3Constraint.m; sourceTree = "<group>"; };
+		1890507520A6FAB500C99C6D /* NSLayoutConstraint+MASG3DebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASG3DebugAdditions.m"; sourceTree = "<group>"; };
+		1890507620A6FAB500C99C6D /* MasonryGrowing3rd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryGrowing3rd.h; sourceTree = "<group>"; };
+		1890507720A6FAB500C99C6D /* MASG3ViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASG3ViewAttribute.m; sourceTree = "<group>"; };
+		1890507820A6FAB500C99C6D /* ViewController+MASG3Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASG3Additions.h"; sourceTree = "<group>"; };
+		1890507920A6FAB500C99C6D /* MASG3ViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASG3ViewConstraint.m; sourceTree = "<group>"; };
+		1890507A20A6FAB500C99C6D /* NSArray+MASG3Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASG3Additions.h"; sourceTree = "<group>"; };
+		1890507B20A6FAB500C99C6D /* MASG3CompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASG3CompositeConstraint.m; sourceTree = "<group>"; };
+		1890507C20A6FAB500C99C6D /* MASG3ConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASG3ConstraintMaker.m; sourceTree = "<group>"; };
+		1890507D20A6FAB500C99C6D /* View+MASG3ShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASG3ShorthandAdditions.h"; sourceTree = "<group>"; };
+		1890507E20A6FAB500C99C6D /* NSLayoutConstraint+MASG3DebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASG3DebugAdditions.h"; sourceTree = "<group>"; };
+		1890507F20A6FAB500C99C6D /* MASG3Constraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASG3Constraint.h; sourceTree = "<group>"; };
+		1890508020A6FAB500C99C6D /* View+MASG3Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASG3Additions.h"; sourceTree = "<group>"; };
+		1890508120A6FAB500C99C6D /* MASG3LayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASG3LayoutConstraint.h; sourceTree = "<group>"; };
+		1890508320A6FAB500C99C6D /* GrowingReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingReachability.h; sourceTree = "<group>"; };
+		1890508420A6FAB500C99C6D /* GrowingReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingReachability.m; sourceTree = "<group>"; };
+		1890508620A6FAB500C99C6D /* FMG3ResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMG3ResultSet.h; sourceTree = "<group>"; };
+		1890508720A6FAB500C99C6D /* FMG3DatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMG3DatabaseAdditions.m; sourceTree = "<group>"; };
+		1890508820A6FAB500C99C6D /* FMG3DatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMG3DatabaseQueue.m; sourceTree = "<group>"; };
+		1890508920A6FAB500C99C6D /* FMG3Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMG3Database.m; sourceTree = "<group>"; };
+		1890508A20A6FAB500C99C6D /* FMG3DatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMG3DatabasePool.h; sourceTree = "<group>"; };
+		1890508B20A6FAB500C99C6D /* FMG3DatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMG3DatabaseAdditions.h; sourceTree = "<group>"; };
+		1890508C20A6FAB500C99C6D /* FMG3ResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMG3ResultSet.m; sourceTree = "<group>"; };
+		1890508D20A6FAB500C99C6D /* FMG3Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMG3Database.h; sourceTree = "<group>"; };
+		1890508E20A6FAB500C99C6D /* FMG3DatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMG3DatabaseQueue.h; sourceTree = "<group>"; };
+		1890508F20A6FAB500C99C6D /* FMG3DatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMG3DatabasePool.m; sourceTree = "<group>"; };
+		1890509020A6FAB500C99C6D /* FMDBG3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBG3.h; sourceTree = "<group>"; };
+		189050B820A6FAF200C99C6D /* GrowingMediator+GrowingDeepLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GrowingMediator+GrowingDeepLink.m"; sourceTree = "<group>"; };
+		189050B920A6FAF200C99C6D /* GrowingMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingMediator.m; sourceTree = "<group>"; };
+		189050BA20A6FAF200C99C6D /* GrowingMediator+GrowingDeepLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GrowingMediator+GrowingDeepLink.h"; sourceTree = "<group>"; };
+		189050BB20A6FAF200C99C6D /* GrowingMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingMediator.h; sourceTree = "<group>"; };
+		189050C120A6FFE300C99C6D /* GrowingStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingStatusBar.m; sourceTree = "<group>"; };
+		189050C220A6FFE300C99C6D /* GrowingMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingMenu.m; sourceTree = "<group>"; };
+		189050C320A6FFE300C99C6D /* GrowingAlertMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingAlertMenu.h; sourceTree = "<group>"; };
+		189050C520A6FFE300C99C6D /* GrowingMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingMenuView.h; sourceTree = "<group>"; };
+		189050C620A6FFE300C99C6D /* GrowingKeyBoardToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingKeyBoardToolBar.m; sourceTree = "<group>"; };
+		189050C720A6FFE300C99C6D /* GrowingHelperMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingHelperMenu.m; sourceTree = "<group>"; };
+		189050C920A6FFE300C99C6D /* GrowingKeyBoardToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingKeyBoardToolBar.h; sourceTree = "<group>"; };
+		189050CA20A6FFE300C99C6D /* GrowingMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingMenuView.m; sourceTree = "<group>"; };
+		189050CC20A6FFE300C99C6D /* GrowingAlertMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingAlertMenu.m; sourceTree = "<group>"; };
+		189050CD20A6FFE300C99C6D /* GrowingMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingMenu.h; sourceTree = "<group>"; };
+		189050CE20A6FFE300C99C6D /* GrowingStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingStatusBar.h; sourceTree = "<group>"; };
+		189050D020A6FFE300C99C6D /* GrowingHelperMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingHelperMenu.h; sourceTree = "<group>"; };
+		189050EB20A7010600C99C6D /* GROW_KDNetworkInterfaceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GROW_KDNetworkInterfaceManager.m; sourceTree = "<group>"; };
+		189050ED20A7010600C99C6D /* Growing3rdLibSRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Growing3rdLibSRWebSocket.m; sourceTree = "<group>"; };
+		189050EE20A7010600C99C6D /* Growing3rdLibSRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Growing3rdLibSRWebSocket.h; sourceTree = "<group>"; };
+		189050EF20A7010600C99C6D /* Growing3rdLibSocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Growing3rdLibSocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		189050F120A7010600C99C6D /* lz4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lz4.h; sourceTree = "<group>"; };
+		189050F220A7010600C99C6D /* lz4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lz4.c; sourceTree = "<group>"; };
+		189050F420A7010600C99C6D /* GrowingEventModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingEventModel.m; sourceTree = "<group>"; };
+		189050F520A7010600C99C6D /* GrowingNetworkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingNetworkConfig.m; sourceTree = "<group>"; };
+		189050F720A7010600C99C6D /* GrowingBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingBaseModel.h; sourceTree = "<group>"; };
+		189050F820A7010600C99C6D /* GrowingEventModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingEventModel.h; sourceTree = "<group>"; };
+		189050F920A7010600C99C6D /* GrowingNetworkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingNetworkConfig.h; sourceTree = "<group>"; };
+		189050FA20A7010600C99C6D /* GrowingBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingBaseModel.m; sourceTree = "<group>"; };
+		189050FC20A7010600C99C6D /* GrowingMobileDebugger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingMobileDebugger.m; sourceTree = "<group>"; };
+		189050FE20A7010600C99C6D /* GROW_KDNetworkInterfaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GROW_KDNetworkInterfaceManager.h; sourceTree = "<group>"; };
+		189050FF20A7010600C99C6D /* GrowingMobileDebugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingMobileDebugger.h; sourceTree = "<group>"; };
+		1890511F20A7023200C99C6D /* GrowingEventCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingEventCounter.h; sourceTree = "<group>"; };
+		1890512020A7023200C99C6D /* GrowingInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingInstance.h; sourceTree = "<group>"; };
+		1890512220A7023200C99C6D /* GrowingInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingInstance.m; sourceTree = "<group>"; };
+		1890513620A7036F00C99C6D /* FoObjectSELObserverMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoObjectSELObserverMacro.h; sourceTree = "<group>"; };
+		1890513820A7036F00C99C6D /* GrowingCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingCategory.h; sourceTree = "<group>"; };
+		1890513920A7036F00C99C6D /* FoAspectMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoAspectMacro.h; sourceTree = "<group>"; };
+		1890513A20A7036F00C99C6D /* FoAspect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoAspect.h; sourceTree = "<group>"; };
+		1890513B20A7036F00C99C6D /* G3fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = G3fishhook.h; sourceTree = "<group>"; };
+		1890513C20A7036F00C99C6D /* GrowingAspect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingAspect.h; sourceTree = "<group>"; };
+		1890513D20A7036F00C99C6D /* FoDelegateSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoDelegateSwizzling.h; sourceTree = "<group>"; };
+		1890513E20A7036F00C99C6D /* FoAspectPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoAspectPrivate.h; sourceTree = "<group>"; };
+		1890513F20A7036F00C99C6D /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
+		1890514020A7036F00C99C6D /* FoSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoSwizzling.m; sourceTree = "<group>"; };
+		1890514120A7036F00C99C6D /* FoObjectSELObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoObjectSELObserver.m; sourceTree = "<group>"; };
+		1890514220A7036F00C99C6D /* FoWeakObjectShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoWeakObjectShell.h; sourceTree = "<group>"; };
+		1890514320A7036F00C99C6D /* FoAspectBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoAspectBody.m; sourceTree = "<group>"; };
+		1890514420A7036F00C99C6D /* FoAspect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoAspect.m; sourceTree = "<group>"; };
+		1890514520A7036F00C99C6D /* GrowingAspect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingAspect.m; sourceTree = "<group>"; };
+		1890514620A7036F00C99C6D /* G3fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = G3fishhook.c; sourceTree = "<group>"; };
+		1890514720A7036F00C99C6D /* FoWeakObjectShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoWeakObjectShell.m; sourceTree = "<group>"; };
+		1890514820A7036F00C99C6D /* FoDefineProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoDefineProperty.h; sourceTree = "<group>"; };
+		1890514920A7036F00C99C6D /* FoObjectSELObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoObjectSELObserver.h; sourceTree = "<group>"; };
+		1890514A20A7036F00C99C6D /* FoSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoSwizzling.h; sourceTree = "<group>"; };
+		1890516120A7039B00C99C6D /* GrowingDataHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingDataHeader.h; sourceTree = "<group>"; };
+		1890516220A7039B00C99C6D /* GrowingUIConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingUIConfig.m; sourceTree = "<group>"; };
+		1890516320A7039B00C99C6D /* GrowingUIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingUIConfig.h; sourceTree = "<group>"; };
+		1890516420A7039B00C99C6D /* GrowingUIHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingUIHeader.h; sourceTree = "<group>"; };
+		1890516920A7047800C99C6D /* FoAspectBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoAspectBody.h; sourceTree = "<group>"; };
+		18A6487723968A4D00C367C2 /* MediatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediatorTest.m; sourceTree = "<group>"; };
+		18A648792397528500C367C2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
+		18CFA85D20A40240004E3681 /* GrowingNodeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrowingNodeProtocol.h; path = GrowingCoreKit/Event/GrowingNodeProtocol.h; sourceTree = SOURCE_ROOT; };
+		18CFA86720A40699004E3681 /* UIApplication+GrowingNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+GrowingNode.h"; sourceTree = "<group>"; };
+		18CFA86820A40699004E3681 /* UIApplication+Growing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Growing.m"; sourceTree = "<group>"; };
+		18CFA86920A40699004E3681 /* UIApplication+GrowingNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+GrowingNode.m"; sourceTree = "<group>"; };
+		18CFA86A20A40699004E3681 /* UIApplication+Growing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Growing.h"; sourceTree = "<group>"; };
+		18CFCC7A2283E43E0022291D /* GrowingEBApplicationEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingEBApplicationEvent.h; sourceTree = "<group>"; };
+		18CFCC7B2283E43E0022291D /* GrowingEBApplicationEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingEBApplicationEvent.m; sourceTree = "<group>"; };
+		18CFCC82228437230022291D /* GrowingEBVCLifeEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingEBVCLifeEvent.h; sourceTree = "<group>"; };
+		18CFCC83228437230022291D /* GrowingEBVCLifeEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingEBVCLifeEvent.m; sourceTree = "<group>"; };
+		18E3C80323262B3D003EFAEA /* GrowingVersionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingVersionManager.h; sourceTree = "<group>"; };
+		18E3C80423262B3D003EFAEA /* GrowingVersionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingVersionManager.m; sourceTree = "<group>"; };
+		347EAC6D2BDA058A0000E453 /* GrowingNetworkPreflight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingNetworkPreflight.h; sourceTree = "<group>"; };
+		347EAC6E2BDA058A0000E453 /* GrowingNetworkPreflight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingNetworkPreflight.m; sourceTree = "<group>"; };
+		34ACBFB82721703900ECF6A1 /* GrowingAsaFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingAsaFetcher.h; sourceTree = "<group>"; };
+		34ACBFB92721703900ECF6A1 /* GrowingAsaFetcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingAsaFetcher.m; sourceTree = "<group>"; };
+		3FE2BA2825FA23C50024E9F5 /* GrowingWKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingWKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		3FE2BA2925FA23D30024E9F5 /* GrowingWKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingWKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		3FE2BA2B25FA24620024E9F5 /* GrowingWKWebViewJavascriptBridge_JS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingWKWebViewJavascriptBridge_JS.h; sourceTree = "<group>"; };
+		3FE2BA2C25FA24730024E9F5 /* GrowingWKWebViewJavascriptBridge_JS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingWKWebViewJavascriptBridge_JS.m; sourceTree = "<group>"; };
+		3FE2BA2E25FA25DD0024E9F5 /* GrowingWebViewJavascriptBridgeConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingWebViewJavascriptBridgeConfiguration.h; sourceTree = "<group>"; };
+		3FE2BA2F25FA25EA0024E9F5 /* GrowingWebViewJavascriptBridgeConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingWebViewJavascriptBridgeConfiguration.m; sourceTree = "<group>"; };
+		3FE2BA3125FA265A0024E9F5 /* GrowingWebViewJavascriptMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingWebViewJavascriptMessage.h; sourceTree = "<group>"; };
+		3FE2BA3225FA26640024E9F5 /* GrowingWebViewJavascriptMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingWebViewJavascriptMessage.m; sourceTree = "<group>"; };
+		42009E5B22C4C61C008E876A /* GrowingEBUserIdEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingEBUserIdEvent.h; sourceTree = "<group>"; };
+		42009E5C22C4C61C008E876A /* GrowingEBUserIdEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingEBUserIdEvent.m; sourceTree = "<group>"; };
+		42009E5F22C4CFDC008E876A /* GrowingEBManualTrackEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingEBManualTrackEvent.h; sourceTree = "<group>"; };
+		42009E6022C4CFDC008E876A /* GrowingEBManualTrackEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingEBManualTrackEvent.m; sourceTree = "<group>"; };
+		4218AB0723C97C8100E53763 /* GrowingCoreDateTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingCoreDateTest.m; sourceTree = "<group>"; };
+		42210FFD247E460100291115 /* GrowingFileStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingFileStore.h; sourceTree = "<group>"; };
+		42210FFE247E460100291115 /* GrowingFileStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingFileStore.m; sourceTree = "<group>"; };
+		4222B2E32473F28100EF5B60 /* GrowingASLLoggerFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingASLLoggerFormat.h; sourceTree = "<group>"; };
+		4222B2E42473F28100EF5B60 /* GrowingASLLoggerFormat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingASLLoggerFormat.m; sourceTree = "<group>"; };
+		422F36B7246295E500DFAFF3 /* GrowingWSLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingWSLogger.h; sourceTree = "<group>"; };
+		422F36B8246295E500DFAFF3 /* GrowingWSLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingWSLogger.m; sourceTree = "<group>"; };
+		429B6BA2244EC84F0043F8D5 /* GrowingLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingLog.m; sourceTree = "<group>"; };
+		429B6BA3244EC84F0043F8D5 /* GrowingASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingASLLogger.h; sourceTree = "<group>"; };
+		429B6BA6244EC8500043F8D5 /* GrowingTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingTTYLogger.h; sourceTree = "<group>"; };
+		429B6BAA244EC8500043F8D5 /* GrowingASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingASLLogger.m; sourceTree = "<group>"; };
+		429B6BAB244EC8500043F8D5 /* GrowingLoggerNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingLoggerNames.h; sourceTree = "<group>"; };
+		429B6BAE244EC8500043F8D5 /* GrowingLogMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingLogMacros.h; sourceTree = "<group>"; };
+		429B6BB3244EC8510043F8D5 /* GrowingLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingLog.h; sourceTree = "<group>"; };
+		429B6BB5244EC8510043F8D5 /* GrowingCocoaLumberjack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingCocoaLumberjack.h; sourceTree = "<group>"; };
+		429B6BB6244EC8510043F8D5 /* GrowingLoggerNames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingLoggerNames.m; sourceTree = "<group>"; };
+		429B6BBC244EC8520043F8D5 /* GrowingTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingTTYLogger.m; sourceTree = "<group>"; };
+		429E274622964858006884C6 /* GrowingEBApplicationEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingEBApplicationEvent.m; sourceTree = "<group>"; };
+		429E274722964859006884C6 /* GrowingEBApplicationEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowingEBApplicationEvent.h; sourceTree = "<group>"; };
+		494BF2AA238CED9F0050E014 /* GrowingEBMonitorEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingEBMonitorEvent.h; sourceTree = "<group>"; };
+		494BF2AB238CED9F0050E014 /* GrowingEBMonitorEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingEBMonitorEvent.m; sourceTree = "<group>"; };
+		4979EB98243715A600A408C9 /* GrowingActivateEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrowingActivateEvent.h; sourceTree = "<group>"; };
+		4979EB99243715A600A408C9 /* GrowingActivateEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrowingActivateEvent.m; sourceTree = "<group>"; };
+		49EC0759243DB46300CD95BD /* GrowingEventCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrowingEventCounter.m; sourceTree = "<group>"; };
+		B6C6F023C3C670864F11ABA5 /* Pods-GrowingCoreKitUnitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowingCoreKitUnitTest.debug.xcconfig"; path = "Target Support Files/Pods-GrowingCoreKitUnitTest/Pods-GrowingCoreKitUnitTest.debug.xcconfig"; sourceTree = "<group>"; };
+		D9BB7605E4E08B8D1053C304 /* Pods-GrowingCoreKitUnitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrowingCoreKitUnitTest.release.xcconfig"; path = "Target Support Files/Pods-GrowingCoreKitUnitTest/Pods-GrowingCoreKitUnitTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		186DC67523966398002C0D52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18A6487A2397528500C367C2 /* libsqlite3.tbd in Frameworks */,
+				186DC67D23966399002C0D52 /* GrowingCoreKit.framework in Frameworks */,
+				89CD7E222D9E384954749B7C /* Pods_GrowingCoreKitUnitTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1875FAFE20909B380019AED3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		182AE4C4214A5E570077415C /* WebSocketServer */ = {
+			isa = PBXGroup;
+			children = (
+				182AE4E8214A5F350077415C /* HTTP */,
+				182AE4E3214A5F050077415C /* TCP */,
+			);
+			path = WebSocketServer;
+			sourceTree = "<group>";
+		};
+		182AE4E3214A5F050077415C /* TCP */ = {
+			isa = PBXGroup;
+			children = (
+				182AE4E4214A5F230077415C /* GrowingGCDAsyncSocket.h */,
+				182AE4E5214A5F230077415C /* GrowingGCDAsyncSocket.m */,
+			);
+			path = TCP;
+			sourceTree = "<group>";
+		};
+		182AE4E8214A5F350077415C /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				182AE516214A5F820077415C /* Categories */,
+				182AE501214A5F5A0077415C /* Responses */,
+				182AE4F0214A5F4D0077415C /* GrowingHTTPAuthenticationRequest.h */,
+				182AE4E9214A5F4C0077415C /* GrowingHTTPAuthenticationRequest.m */,
+				182AE4F4214A5F4D0077415C /* GrowingHTTPConnection.h */,
+				182AE4EB214A5F4C0077415C /* GrowingHTTPConnection.m */,
+				182AE4F1214A5F4D0077415C /* GrowingHTTPLogging.h */,
+				182AE4F3214A5F4D0077415C /* GrowingHTTPMessage.h */,
+				182AE4ED214A5F4C0077415C /* GrowingHTTPMessage.m */,
+				182AE4EF214A5F4D0077415C /* GrowingHTTPResponse.h */,
+				182AE4EA214A5F4C0077415C /* GrowingHTTPServer.h */,
+				182AE4EE214A5F4C0077415C /* GrowingHTTPServer.m */,
+				182AE4F2214A5F4D0077415C /* GrowingWebSocketServer.h */,
+				182AE4EC214A5F4C0077415C /* GrowingWebSocketServer.m */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		182AE501214A5F5A0077415C /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				182AE507214A5F720077415C /* GrowingHTTPAsyncFileResponse.h */,
+				182AE50A214A5F730077415C /* GrowingHTTPAsyncFileResponse.m */,
+				182AE505214A5F720077415C /* GrowingHTTPDataResponse.h */,
+				182AE506214A5F720077415C /* GrowingHTTPDataResponse.m */,
+				182AE504214A5F720077415C /* GrowingHTTPDynamicFileResponse.h */,
+				182AE503214A5F720077415C /* GrowingHTTPDynamicFileResponse.m */,
+				182AE508214A5F720077415C /* GrowingHTTPFileResponse.h */,
+				182AE502214A5F720077415C /* GrowingHTTPFileResponse.m */,
+				182AE509214A5F720077415C /* GrowingHTTPRedirectResponse.h */,
+				182AE50B214A5F730077415C /* GrowingHTTPRedirectResponse.m */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		182AE516214A5F820077415C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				182AE517214A5F950077415C /* GrowingDDData.h */,
+				182AE51C214A5F960077415C /* GrowingDDData.m */,
+				182AE519214A5F950077415C /* GrowingDDNumber.h */,
+				182AE51B214A5F960077415C /* GrowingDDNumber.m */,
+				182AE518214A5F950077415C /* GrowingDDRange.h */,
+				182AE51A214A5F960077415C /* GrowingDDRange.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		183D900E226AC76E00C217F8 /* EventBus */ = {
+			isa = PBXGroup;
+			children = (
+				183D9010226AC7C400C217F8 /* Event */,
+				183D900F226AC79A00C217F8 /* MethodMap */,
+				183D8FFC226ABB1100C217F8 /* GrowingEventBus.h */,
+				183D8FFD226ABB1100C217F8 /* GrowingEventBus.m */,
+			);
+			path = EventBus;
+			sourceTree = "<group>";
+		};
+		183D900F226AC79A00C217F8 /* MethodMap */ = {
+			isa = PBXGroup;
+			children = (
+				184303012269E72A008518EE /* GrowingEventBusMethodMap.h */,
+				184303022269E72A008518EE /* GrowingEventBusMethodMap.m */,
+			);
+			path = MethodMap;
+			sourceTree = "<group>";
+		};
+		183D9010226AC7C400C217F8 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				42009E5F22C4CFDC008E876A /* GrowingEBManualTrackEvent.h */,
+				42009E6022C4CFDC008E876A /* GrowingEBManualTrackEvent.m */,
+				42009E5B22C4C61C008E876A /* GrowingEBUserIdEvent.h */,
+				42009E5C22C4C61C008E876A /* GrowingEBUserIdEvent.m */,
+				429E274722964859006884C6 /* GrowingEBApplicationEvent.h */,
+				429E274622964858006884C6 /* GrowingEBApplicationEvent.m */,
+				183D9011226AC8BF00C217F8 /* GrowingEBEvent.h */,
+				183D9012226AC8BF00C217F8 /* GrowingEBEvent.m */,
+				183D9015226ACA4900C217F8 /* GrowingEBTrackSelfEvent.h */,
+				183D9016226ACA4900C217F8 /* GrowingEBTrackSelfEvent.m */,
+				18CFCC7A2283E43E0022291D /* GrowingEBApplicationEvent.h */,
+				18CFCC7B2283E43E0022291D /* GrowingEBApplicationEvent.m */,
+				18CFCC82228437230022291D /* GrowingEBVCLifeEvent.h */,
+				18CFCC83228437230022291D /* GrowingEBVCLifeEvent.m */,
+				494BF2AA238CED9F0050E014 /* GrowingEBMonitorEvent.h */,
+				494BF2AB238CED9F0050E014 /* GrowingEBMonitorEvent.m */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		186DC67923966399002C0D52 /* GrowingCoreKitUnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				18A6487723968A4D00C367C2 /* MediatorTest.m */,
+				4218AB0723C97C8100E53763 /* GrowingCoreDateTest.m */,
+				186DC67C23966399002C0D52 /* Info.plist */,
+			);
+			path = GrowingCoreKitUnitTest;
+			sourceTree = "<group>";
+		};
+		1875FAF820909B380019AED3 = {
+			isa = PBXGroup;
+			children = (
+				1875FB0420909B380019AED3 /* GrowingCoreKit */,
+				186DC67923966399002C0D52 /* GrowingCoreKitUnitTest */,
+				1875FB0320909B380019AED3 /* Products */,
+				EDA39D20EE91A10543BBB218 /* Pods */,
+				C8CE098F00F85AF6510BDEE5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1875FB0320909B380019AED3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1875FB0220909B380019AED3 /* GrowingCoreKit.framework */,
+				186DC67823966399002C0D52 /* GrowingCoreKitUnitTest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1875FB0420909B380019AED3 /* GrowingCoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				34ACBFB72721700F00ECF6A1 /* AppleSearchAds */,
+				3FE2BA1325FA1F960024E9F5 /* Hybrid */,
+				18904FEA20A6F65D00C99C6D /* GrowingGlobal.h */,
+				18904FE920A6F65D00C99C6D /* GrowingGlobal.m */,
+				18904FEE20A6F66700C99C6D /* GrowingAttributesConst.h */,
+				18904FED20A6F66700C99C6D /* GrowingAttributesConst.m */,
+				18904FF120A6F66F00C99C6D /* GrowingWindow.h */,
+				18904FF220A6F67000C99C6D /* GrowingWindow.m */,
+				4222B2E22473EB1300EF5B60 /* LogFormat */,
+				1890511B20A7023200C99C6D /* Public */,
+				18E3C80223262AE7003EFAEA /* VersionManager */,
+				18904FF520A6F6D500C99C6D /* Base */,
+				18904FFE20A6F85500C99C6D /* Debug */,
+				1890500320A6F8B500C99C6D /* Event */,
+				1890502620A6FA2200C99C6D /* Helpers */,
+				1890506720A6FAB500C99C6D /* lib3rd */,
+				183D900E226AC76E00C217F8 /* EventBus */,
+				189050B720A6FAF200C99C6D /* Mediator */,
+				189050C020A6FFE300C99C6D /* Menu */,
+				189050E920A7010600C99C6D /* NetWork */,
+				1890513420A7036F00C99C6D /* Hook */,
+				18CFA86620A40699004E3681 /* HookApplicationAndLocation */,
+				1890516020A7039B00C99C6D /* UIConfig */,
+			);
+			path = GrowingCoreKit;
+			sourceTree = "<group>";
+		};
+		18904FF520A6F6D500C99C6D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				18904FF620A6F6D500C99C6D /* GrowingUserDefaults.h */,
+				18904FF720A6F6D500C99C6D /* Growing.pch */,
+				18904FF820A6F6D500C99C6D /* GrowingUserDefaults.m */,
+				18904FF920A6F6D500C99C6D /* EXTScope.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		18904FFE20A6F85500C99C6D /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				18904FFF20A6F85500C99C6D /* NSDictionary+GrowingDebug.m */,
+				1890500020A6F85500C99C6D /* NSDictionary+GrowingDebug.h */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		1890500320A6F8B500C99C6D /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				42210FFD247E460100291115 /* GrowingFileStore.h */,
+				42210FFE247E460100291115 /* GrowingFileStore.m */,
+				1890500A20A6F8B500C99C6D /* GrowingAddEventContextProtocal.h */,
+				18CFA85D20A40240004E3681 /* GrowingNodeProtocol.h */,
+				1890500D20A6F8B500C99C6D /* GrowingDeviceInfo.h */,
+				1890500420A6F8B500C99C6D /* GrowingDeviceInfo.m */,
+				1890500F20A6F8B500C99C6D /* GrowingEvent.h */,
+				1890500820A6F8B500C99C6D /* GrowingEvent.m */,
+				4979EB98243715A600A408C9 /* GrowingActivateEvent.h */,
+				4979EB99243715A600A408C9 /* GrowingActivateEvent.m */,
+				1890501020A6F8B500C99C6D /* GrowingEventDataBase.h */,
+				1890500920A6F8B500C99C6D /* GrowingEventDataBase.m */,
+				1890500520A6F8B500C99C6D /* GrowingManualTrackEvent.h */,
+				1890500C20A6F8B500C99C6D /* GrowingManualTrackEvent.m */,
+				1890500620A6F8B500C99C6D /* GrowingEventManager.h */,
+				1890500E20A6F8B500C99C6D /* GrowingEventManager.m */,
+				1890500720A6F8B500C99C6D /* GrowingCustomField.h */,
+				1890501120A6F8B500C99C6D /* GrowingCustomField.m */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		1890502620A6FA2200C99C6D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				188A5C3620A96E8900E9B4A7 /* GrowingHelpers.h */,
+				1890502720A6FA2200C99C6D /* NSData+GrowingHelper.h */,
+				1890503220A6FA2200C99C6D /* NSObject+GrowingHelper.h */,
+				1890504420A6FA2200C99C6D /* NSObject+GrowingHelper.m */,
+				1890502920A6FA2200C99C6D /* NSNumber+GrowingHelper.h */,
+				1890503720A6FA2200C99C6D /* NSNumber+GrowingHelper.m */,
+				1890502B20A6FA2200C99C6D /* UIControl+GrowingHelper.h */,
+				1890504020A6FA2200C99C6D /* UIControl+GrowingHelper.m */,
+				1890503F20A6FA2200C99C6D /* NSURL+GrowingHelper.h */,
+				1890502C20A6FA2200C99C6D /* NSURL+GrowingHelper.m */,
+				1890502D20A6FA2200C99C6D /* UIView+GrowingHelperLayout.h */,
+				1890502F20A6FA2200C99C6D /* NSString+GrowingHelper.h */,
+				1890503D20A6FA2200C99C6D /* NSString+GrowingHelper.m */,
+				1890503020A6FA2200C99C6D /* UIView+GrowingHelper.h */,
+				1890503B20A6FA2200C99C6D /* UIView+GrowingHelper.m */,
+				1890502820A6FA2200C99C6D /* NSObject+GrowingIvarHelper.h */,
+				1890503820A6FA2200C99C6D /* NSObject+GrowingIvarHelper.m */,
+				1890503520A6FA2200C99C6D /* UIApplication+GrowingHelper.h */,
+				1890504620A6FA2200C99C6D /* UIApplication+GrowingHelper.m */,
+				1890504520A6FA2200C99C6D /* GrowingDispatchManager.h */,
+				1890503620A6FA2200C99C6D /* GrowingDispatchManager.m */,
+				1890503920A6FA2200C99C6D /* NSData+GrowingHelper.m */,
+				1890503A20A6FA2200C99C6D /* UITextField+GrowingHelper.h */,
+				1890503120A6FA2200C99C6D /* UITextField+GrowingHelper.m */,
+				1890502E20A6FA2200C99C6D /* UIImage+GrowingHelper.h */,
+				1890503C20A6FA2200C99C6D /* UIImage+GrowingHelper.m */,
+				1890503E20A6FA2200C99C6D /* UIView+GrowingHelperLayout.m */,
+				1890502A20A6FA2200C99C6D /* NSDictionary+GrowingHelper.h */,
+				1890504120A6FA2200C99C6D /* NSDictionary+GrowingHelper.m */,
+				1890503420A6FA2200C99C6D /* UIWindow+GrowingHelper.h */,
+				1890504220A6FA2200C99C6D /* UIWindow+GrowingHelper.m */,
+				1890503320A6FA2200C99C6D /* NSArray+GrowingHelper.h */,
+				1890504320A6FA2200C99C6D /* NSArray+GrowingHelper.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1890506720A6FAB500C99C6D /* lib3rd */ = {
+			isa = PBXGroup;
+			children = (
+				429B6B9F244EC8220043F8D5 /* GrowingCocoaLumberjack */,
+				182AE4C4214A5E570077415C /* WebSocketServer */,
+				1890506820A6FAB500C99C6D /* Masonry */,
+				1890508220A6FAB500C99C6D /* Reachability */,
+				1890508520A6FAB500C99C6D /* fmdb */,
+			);
+			path = lib3rd;
+			sourceTree = "<group>";
+		};
+		1890506820A6FAB500C99C6D /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				1890506920A6FAB500C99C6D /* NSArray+MASG3Additions.m */,
+				1890506A20A6FAB500C99C6D /* NSArray+MASG3ShorthandAdditions.h */,
+				1890506B20A6FAB500C99C6D /* ViewController+MASG3Additions.m */,
+				1890506C20A6FAB500C99C6D /* MASG3ViewConstraint.h */,
+				1890506D20A6FAB500C99C6D /* MASG3ViewAttribute.h */,
+				1890506E20A6FAB500C99C6D /* MASG3Constraint+Private.h */,
+				1890506F20A6FAB500C99C6D /* MASG3Utilities.h */,
+				1890507020A6FAB500C99C6D /* MASG3ConstraintMaker.h */,
+				1890507120A6FAB500C99C6D /* MASG3CompositeConstraint.h */,
+				1890507220A6FAB500C99C6D /* MASG3LayoutConstraint.m */,
+				1890507320A6FAB500C99C6D /* View+MASG3Additions.m */,
+				1890507420A6FAB500C99C6D /* MASG3Constraint.m */,
+				1890507520A6FAB500C99C6D /* NSLayoutConstraint+MASG3DebugAdditions.m */,
+				1890507620A6FAB500C99C6D /* MasonryGrowing3rd.h */,
+				1890507720A6FAB500C99C6D /* MASG3ViewAttribute.m */,
+				1890507820A6FAB500C99C6D /* ViewController+MASG3Additions.h */,
+				1890507920A6FAB500C99C6D /* MASG3ViewConstraint.m */,
+				1890507A20A6FAB500C99C6D /* NSArray+MASG3Additions.h */,
+				1890507B20A6FAB500C99C6D /* MASG3CompositeConstraint.m */,
+				1890507C20A6FAB500C99C6D /* MASG3ConstraintMaker.m */,
+				1890507D20A6FAB500C99C6D /* View+MASG3ShorthandAdditions.h */,
+				1890507E20A6FAB500C99C6D /* NSLayoutConstraint+MASG3DebugAdditions.h */,
+				1890507F20A6FAB500C99C6D /* MASG3Constraint.h */,
+				1890508020A6FAB500C99C6D /* View+MASG3Additions.h */,
+				1890508120A6FAB500C99C6D /* MASG3LayoutConstraint.h */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		1890508220A6FAB500C99C6D /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				1890508320A6FAB500C99C6D /* GrowingReachability.h */,
+				1890508420A6FAB500C99C6D /* GrowingReachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		1890508520A6FAB500C99C6D /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				1890509020A6FAB500C99C6D /* FMDBG3.h */,
+				1890508620A6FAB500C99C6D /* FMG3ResultSet.h */,
+				1890508C20A6FAB500C99C6D /* FMG3ResultSet.m */,
+				1890508E20A6FAB500C99C6D /* FMG3DatabaseQueue.h */,
+				1890508820A6FAB500C99C6D /* FMG3DatabaseQueue.m */,
+				1890508D20A6FAB500C99C6D /* FMG3Database.h */,
+				1890508920A6FAB500C99C6D /* FMG3Database.m */,
+				1890508B20A6FAB500C99C6D /* FMG3DatabaseAdditions.h */,
+				1890508720A6FAB500C99C6D /* FMG3DatabaseAdditions.m */,
+				1890508A20A6FAB500C99C6D /* FMG3DatabasePool.h */,
+				1890508F20A6FAB500C99C6D /* FMG3DatabasePool.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		189050B720A6FAF200C99C6D /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				189050BA20A6FAF200C99C6D /* GrowingMediator+GrowingDeepLink.h */,
+				189050B820A6FAF200C99C6D /* GrowingMediator+GrowingDeepLink.m */,
+				189050BB20A6FAF200C99C6D /* GrowingMediator.h */,
+				189050B920A6FAF200C99C6D /* GrowingMediator.m */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		189050C020A6FFE300C99C6D /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				189050CD20A6FFE300C99C6D /* GrowingMenu.h */,
+				189050C220A6FFE300C99C6D /* GrowingMenu.m */,
+				189050C520A6FFE300C99C6D /* GrowingMenuView.h */,
+				189050CA20A6FFE300C99C6D /* GrowingMenuView.m */,
+				189050C920A6FFE300C99C6D /* GrowingKeyBoardToolBar.h */,
+				189050C620A6FFE300C99C6D /* GrowingKeyBoardToolBar.m */,
+				189050C320A6FFE300C99C6D /* GrowingAlertMenu.h */,
+				189050CC20A6FFE300C99C6D /* GrowingAlertMenu.m */,
+				189050CE20A6FFE300C99C6D /* GrowingStatusBar.h */,
+				189050C120A6FFE300C99C6D /* GrowingStatusBar.m */,
+				189050D020A6FFE300C99C6D /* GrowingHelperMenu.h */,
+				189050C720A6FFE300C99C6D /* GrowingHelperMenu.m */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		189050E920A7010600C99C6D /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				189050EC20A7010600C99C6D /* SocketRocket */,
+				189050F020A7010600C99C6D /* LZ4 */,
+				189050F320A7010600C99C6D /* Models */,
+				189050FF20A7010600C99C6D /* GrowingMobileDebugger.h */,
+				189050FC20A7010600C99C6D /* GrowingMobileDebugger.m */,
+				189050FE20A7010600C99C6D /* GROW_KDNetworkInterfaceManager.h */,
+				189050EB20A7010600C99C6D /* GROW_KDNetworkInterfaceManager.m */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		189050EC20A7010600C99C6D /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				189050EE20A7010600C99C6D /* Growing3rdLibSRWebSocket.h */,
+				189050ED20A7010600C99C6D /* Growing3rdLibSRWebSocket.m */,
+				189050EF20A7010600C99C6D /* Growing3rdLibSocketRocket-Prefix.pch */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		189050F020A7010600C99C6D /* LZ4 */ = {
+			isa = PBXGroup;
+			children = (
+				189050F120A7010600C99C6D /* lz4.h */,
+				189050F220A7010600C99C6D /* lz4.c */,
+			);
+			path = LZ4;
+			sourceTree = "<group>";
+		};
+		189050F320A7010600C99C6D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				189050F920A7010600C99C6D /* GrowingNetworkConfig.h */,
+				189050F520A7010600C99C6D /* GrowingNetworkConfig.m */,
+				189050F820A7010600C99C6D /* GrowingEventModel.h */,
+				189050F420A7010600C99C6D /* GrowingEventModel.m */,
+				1817BAEC22E801CD0000FD1C /* GrowingDeepLinkModel.h */,
+				1817BAED22E801CD0000FD1C /* GrowingDeepLinkModel.m */,
+				189050F720A7010600C99C6D /* GrowingBaseModel.h */,
+				189050FA20A7010600C99C6D /* GrowingBaseModel.m */,
+				347EAC6D2BDA058A0000E453 /* GrowingNetworkPreflight.h */,
+				347EAC6E2BDA058A0000E453 /* GrowingNetworkPreflight.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1890511B20A7023200C99C6D /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				188A5C2A20A9674D00E9B4A7 /* GrowingCoreKit.h */,
+				188A5C2B20A9674D00E9B4A7 /* GrowingCoreKit.m */,
+				1890511F20A7023200C99C6D /* GrowingEventCounter.h */,
+				49EC0759243DB46300CD95BD /* GrowingEventCounter.m */,
+				1890512020A7023200C99C6D /* GrowingInstance.h */,
+				1890512220A7023200C99C6D /* GrowingInstance.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		1890513420A7036F00C99C6D /* Hook */ = {
+			isa = PBXGroup;
+			children = (
+				1890513520A7036F00C99C6D /* HookBase */,
+			);
+			path = Hook;
+			sourceTree = "<group>";
+		};
+		1890513520A7036F00C99C6D /* HookBase */ = {
+			isa = PBXGroup;
+			children = (
+				1890513B20A7036F00C99C6D /* G3fishhook.h */,
+				1890514620A7036F00C99C6D /* G3fishhook.c */,
+				1890514820A7036F00C99C6D /* FoDefineProperty.h */,
+				1890513F20A7036F00C99C6D /* metamacros.h */,
+				1890513E20A7036F00C99C6D /* FoAspectPrivate.h */,
+				1890513820A7036F00C99C6D /* GrowingCategory.h */,
+				1890513D20A7036F00C99C6D /* FoDelegateSwizzling.h */,
+				1890513620A7036F00C99C6D /* FoObjectSELObserverMacro.h */,
+				1890513920A7036F00C99C6D /* FoAspectMacro.h */,
+				1890514A20A7036F00C99C6D /* FoSwizzling.h */,
+				1890514020A7036F00C99C6D /* FoSwizzling.m */,
+				1890513A20A7036F00C99C6D /* FoAspect.h */,
+				1890514420A7036F00C99C6D /* FoAspect.m */,
+				1890513C20A7036F00C99C6D /* GrowingAspect.h */,
+				1890514520A7036F00C99C6D /* GrowingAspect.m */,
+				1890516920A7047800C99C6D /* FoAspectBody.h */,
+				1890514320A7036F00C99C6D /* FoAspectBody.m */,
+				1890514220A7036F00C99C6D /* FoWeakObjectShell.h */,
+				1890514720A7036F00C99C6D /* FoWeakObjectShell.m */,
+				1890514920A7036F00C99C6D /* FoObjectSELObserver.h */,
+				1890514120A7036F00C99C6D /* FoObjectSELObserver.m */,
+			);
+			path = HookBase;
+			sourceTree = "<group>";
+		};
+		1890516020A7039B00C99C6D /* UIConfig */ = {
+			isa = PBXGroup;
+			children = (
+				1875FB0620909B380019AED3 /* Info.plist */,
+				1890516420A7039B00C99C6D /* GrowingUIHeader.h */,
+				1890516120A7039B00C99C6D /* GrowingDataHeader.h */,
+				1890516320A7039B00C99C6D /* GrowingUIConfig.h */,
+				1890516220A7039B00C99C6D /* GrowingUIConfig.m */,
+			);
+			path = UIConfig;
+			sourceTree = "<group>";
+		};
+		18CFA86620A40699004E3681 /* HookApplicationAndLocation */ = {
+			isa = PBXGroup;
+			children = (
+				18CFA86720A40699004E3681 /* UIApplication+GrowingNode.h */,
+				18CFA86920A40699004E3681 /* UIApplication+GrowingNode.m */,
+				18CFA86A20A40699004E3681 /* UIApplication+Growing.h */,
+				18CFA86820A40699004E3681 /* UIApplication+Growing.m */,
+				1885084F22C61A7C00AC65A7 /* UIScene+Growing.h */,
+				1885085022C61A7C00AC65A7 /* UIScene+Growing.m */,
+			);
+			path = HookApplicationAndLocation;
+			sourceTree = "<group>";
+		};
+		18E3C80223262AE7003EFAEA /* VersionManager */ = {
+			isa = PBXGroup;
+			children = (
+				18E3C80323262B3D003EFAEA /* GrowingVersionManager.h */,
+				18E3C80423262B3D003EFAEA /* GrowingVersionManager.m */,
+			);
+			path = VersionManager;
+			sourceTree = "<group>";
+		};
+		34ACBFB72721700F00ECF6A1 /* AppleSearchAds */ = {
+			isa = PBXGroup;
+			children = (
+				34ACBFB82721703900ECF6A1 /* GrowingAsaFetcher.h */,
+				34ACBFB92721703900ECF6A1 /* GrowingAsaFetcher.m */,
+			);
+			path = AppleSearchAds;
+			sourceTree = "<group>";
+		};
+		3FE2BA1325FA1F960024E9F5 /* Hybrid */ = {
+			isa = PBXGroup;
+			children = (
+				3FE2BA2825FA23C50024E9F5 /* GrowingWKWebViewJavascriptBridge.h */,
+				3FE2BA2925FA23D30024E9F5 /* GrowingWKWebViewJavascriptBridge.m */,
+				3FE2BA2B25FA24620024E9F5 /* GrowingWKWebViewJavascriptBridge_JS.h */,
+				3FE2BA2C25FA24730024E9F5 /* GrowingWKWebViewJavascriptBridge_JS.m */,
+				3FE2BA2E25FA25DD0024E9F5 /* GrowingWebViewJavascriptBridgeConfiguration.h */,
+				3FE2BA2F25FA25EA0024E9F5 /* GrowingWebViewJavascriptBridgeConfiguration.m */,
+				3FE2BA3125FA265A0024E9F5 /* GrowingWebViewJavascriptMessage.h */,
+				3FE2BA3225FA26640024E9F5 /* GrowingWebViewJavascriptMessage.m */,
+			);
+			path = Hybrid;
+			sourceTree = "<group>";
+		};
+		4222B2E22473EB1300EF5B60 /* LogFormat */ = {
+			isa = PBXGroup;
+			children = (
+				4222B2E32473F28100EF5B60 /* GrowingASLLoggerFormat.h */,
+				4222B2E42473F28100EF5B60 /* GrowingASLLoggerFormat.m */,
+			);
+			path = LogFormat;
+			sourceTree = "<group>";
+		};
+		429B6B9F244EC8220043F8D5 /* GrowingCocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				429B6BB5244EC8510043F8D5 /* GrowingCocoaLumberjack.h */,
+				429B6BB3244EC8510043F8D5 /* GrowingLog.h */,
+				429B6BA2244EC84F0043F8D5 /* GrowingLog.m */,
+				429B6BAE244EC8500043F8D5 /* GrowingLogMacros.h */,
+				429B6BAB244EC8500043F8D5 /* GrowingLoggerNames.h */,
+				429B6BB6244EC8510043F8D5 /* GrowingLoggerNames.m */,
+				429B6BA3244EC84F0043F8D5 /* GrowingASLLogger.h */,
+				429B6BAA244EC8500043F8D5 /* GrowingASLLogger.m */,
+				429B6BA6244EC8500043F8D5 /* GrowingTTYLogger.h */,
+				429B6BBC244EC8520043F8D5 /* GrowingTTYLogger.m */,
+				422F36B7246295E500DFAFF3 /* GrowingWSLogger.h */,
+				422F36B8246295E500DFAFF3 /* GrowingWSLogger.m */,
+			);
+			path = GrowingCocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		C8CE098F00F85AF6510BDEE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18A648792397528500C367C2 /* libsqlite3.tbd */,
+				16182D2AE9330C4C65E22A8D /* Pods_GrowingCoreKitUnitTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDA39D20EE91A10543BBB218 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6C6F023C3C670864F11ABA5 /* Pods-GrowingCoreKitUnitTest.debug.xcconfig */,
+				D9BB7605E4E08B8D1053C304 /* Pods-GrowingCoreKitUnitTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1875FAFF20909B380019AED3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188A5C2C20A9674D00E9B4A7 /* GrowingCoreKit.h in Headers */,
+				429B6BC9244EC8520043F8D5 /* GrowingLoggerNames.h in Headers */,
+				1890505020A6FA2200C99C6D /* UIView+GrowingHelper.h in Headers */,
+				18904FEC20A6F65D00C99C6D /* GrowingGlobal.h in Headers */,
+				1890511120A7010600C99C6D /* GROW_KDNetworkInterfaceManager.h in Headers */,
+				1890516A20A7047900C99C6D /* FoAspectBody.h in Headers */,
+				1890504B20A6FA2200C99C6D /* UIControl+GrowingHelper.h in Headers */,
+				1890515220A7036F00C99C6D /* FoDelegateSwizzling.h in Headers */,
+				494BF2AC238CED9F0050E014 /* GrowingEBMonitorEvent.h in Headers */,
+				1890511220A7010600C99C6D /* GrowingMobileDebugger.h in Headers */,
+				189050B420A6FAB600C99C6D /* FMG3DatabaseQueue.h in Headers */,
+				189050AC20A6FAB600C99C6D /* FMG3ResultSet.h in Headers */,
+				189050D320A6FFE300C99C6D /* GrowingAlertMenu.h in Headers */,
+				189050A020A6FAB600C99C6D /* ViewController+MASG3Additions.h in Headers */,
+				347EAC6F2BDA058A0000E453 /* GrowingNetworkPreflight.h in Headers */,
+				1890500220A6F85500C99C6D /* NSDictionary+GrowingDebug.h in Headers */,
+				1890505220A6FA2200C99C6D /* NSObject+GrowingHelper.h in Headers */,
+				42009E5D22C4C61C008E876A /* GrowingEBUserIdEvent.h in Headers */,
+				1890515D20A7036F00C99C6D /* FoDefineProperty.h in Headers */,
+				1890509220A6FAB600C99C6D /* NSArray+MASG3ShorthandAdditions.h in Headers */,
+				1890510320A7010600C99C6D /* Growing3rdLibSRWebSocket.h in Headers */,
+				1890516820A7039B00C99C6D /* GrowingUIHeader.h in Headers */,
+				183D9017226ACA4900C217F8 /* GrowingEBTrackSelfEvent.h in Headers */,
+				189050AA20A6FAB600C99C6D /* GrowingReachability.h in Headers */,
+				429B6BD3244EC8530043F8D5 /* GrowingCocoaLumberjack.h in Headers */,
+				1890504820A6FA2200C99C6D /* NSObject+GrowingIvarHelper.h in Headers */,
+				1890515420A7036F00C99C6D /* metamacros.h in Headers */,
+				189050A220A6FAB600C99C6D /* NSArray+MASG3Additions.h in Headers */,
+				34ACBFBA2721703900ECF6A1 /* GrowingAsaFetcher.h in Headers */,
+				1885085122C61A7C00AC65A7 /* UIScene+Growing.h in Headers */,
+				189050D920A6FFE300C99C6D /* GrowingKeyBoardToolBar.h in Headers */,
+				1890509820A6FAB600C99C6D /* MASG3ConstraintMaker.h in Headers */,
+				1890514D20A7036F00C99C6D /* GrowingCategory.h in Headers */,
+				1890504F20A6FA2200C99C6D /* NSString+GrowingHelper.h in Headers */,
+				182AE4FE214A5F4D0077415C /* GrowingWebSocketServer.h in Headers */,
+				1890501920A6F8B600C99C6D /* GrowingAddEventContextProtocal.h in Headers */,
+				189050E020A6FFE300C99C6D /* GrowingHelperMenu.h in Headers */,
+				189050B620A6FAB600C99C6D /* FMDBG3.h in Headers */,
+				422F36B9246295E500DFAFF3 /* GrowingWSLogger.h in Headers */,
+				182AE50F214A5F730077415C /* GrowingHTTPDataResponse.h in Headers */,
+				189050A520A6FAB600C99C6D /* View+MASG3ShorthandAdditions.h in Headers */,
+				1890509E20A6FAB600C99C6D /* MasonryGrowing3rd.h in Headers */,
+				189050A820A6FAB600C99C6D /* View+MASG3Additions.h in Headers */,
+				18904FF320A6F67000C99C6D /* GrowingWindow.h in Headers */,
+				1890504D20A6FA2200C99C6D /* UIView+GrowingHelperLayout.h in Headers */,
+				1890515320A7036F00C99C6D /* FoAspectPrivate.h in Headers */,
+				1890501F20A6F8B600C99C6D /* GrowingEventDataBase.h in Headers */,
+				1890501E20A6F8B600C99C6D /* GrowingEvent.h in Headers */,
+				182AE4E6214A5F230077415C /* GrowingGCDAsyncSocket.h in Headers */,
+				429B6BCC244EC8520043F8D5 /* GrowingLogMacros.h in Headers */,
+				1890504A20A6FA2200C99C6D /* NSDictionary+GrowingHelper.h in Headers */,
+				18CFA85E20A40240004E3681 /* GrowingNodeProtocol.h in Headers */,
+				189050D520A6FFE300C99C6D /* GrowingMenuView.h in Headers */,
+				184303032269E72A008518EE /* GrowingEventBusMethodMap.h in Headers */,
+				1890509720A6FAB600C99C6D /* MASG3Utilities.h in Headers */,
+				189050BE20A6FAF300C99C6D /* GrowingMediator+GrowingDeepLink.h in Headers */,
+				1890516520A7039B00C99C6D /* GrowingDataHeader.h in Headers */,
+				1890515120A7036F00C99C6D /* GrowingAspect.h in Headers */,
+				18904FF020A6F66700C99C6D /* GrowingAttributesConst.h in Headers */,
+				1890509920A6FAB600C99C6D /* MASG3CompositeConstraint.h in Headers */,
+				1890514B20A7036F00C99C6D /* FoObjectSELObserverMacro.h in Headers */,
+				1890501620A6F8B600C99C6D /* GrowingCustomField.h in Headers */,
+				1817BAEE22E801CD0000FD1C /* GrowingDeepLinkModel.h in Headers */,
+				1890509620A6FAB600C99C6D /* MASG3Constraint+Private.h in Headers */,
+				1890506520A6FA2200C99C6D /* GrowingDispatchManager.h in Headers */,
+				18904FFA20A6F6D500C99C6D /* GrowingUserDefaults.h in Headers */,
+				429B6BC4244EC8520043F8D5 /* GrowingTTYLogger.h in Headers */,
+				182AE51F214A5F960077415C /* GrowingDDNumber.h in Headers */,
+				1890505A20A6FA2200C99C6D /* UITextField+GrowingHelper.h in Headers */,
+				188A5C3720A96E8900E9B4A7 /* GrowingHelpers.h in Headers */,
+				182AE51E214A5F960077415C /* GrowingDDRange.h in Headers */,
+				1890504920A6FA2200C99C6D /* NSNumber+GrowingHelper.h in Headers */,
+				18CFCC84228437230022291D /* GrowingEBVCLifeEvent.h in Headers */,
+				182AE4FF214A5F4D0077415C /* GrowingHTTPMessage.h in Headers */,
+				1890510520A7010600C99C6D /* lz4.h in Headers */,
+				182AE51D214A5F960077415C /* GrowingDDData.h in Headers */,
+				1890510A20A7010600C99C6D /* GrowingBaseModel.h in Headers */,
+				189050DE20A6FFE300C99C6D /* GrowingStatusBar.h in Headers */,
+				429B6BD1244EC8530043F8D5 /* GrowingLog.h in Headers */,
+				4222B2E52473F28100EF5B60 /* GrowingASLLoggerFormat.h in Headers */,
+				18CFCC7C2283E43E0022291D /* GrowingEBApplicationEvent.h in Headers */,
+				182AE4FB214A5F4D0077415C /* GrowingHTTPResponse.h in Headers */,
+				42210FFF247E460100291115 /* GrowingFileStore.h in Headers */,
+				18904FFD20A6F6D500C99C6D /* EXTScope.h in Headers */,
+				189050A720A6FAB600C99C6D /* MASG3Constraint.h in Headers */,
+				18904FFD20A6F6D500C99C6D /* EXTScope.h in Headers */,
+				18904FFB20A6F6D500C99C6D /* Growing.pch in Headers */,
+				1890504720A6FA2200C99C6D /* NSData+GrowingHelper.h in Headers */,
+				429B6BC1244EC8520043F8D5 /* GrowingASLLogger.h in Headers */,
+				189050DD20A6FFE300C99C6D /* GrowingMenu.h in Headers */,
+				42009E6122C4CFDC008E876A /* GrowingEBManualTrackEvent.h in Headers */,
+				1890504E20A6FA2200C99C6D /* UIImage+GrowingHelper.h in Headers */,
+				189050A920A6FAB600C99C6D /* MASG3LayoutConstraint.h in Headers */,
+				182AE513214A5F730077415C /* GrowingHTTPRedirectResponse.h in Headers */,
+				1890510B20A7010600C99C6D /* GrowingEventModel.h in Headers */,
+				18E3C80523262B3D003EFAEA /* GrowingVersionManager.h in Headers */,
+				1890516720A7039B00C99C6D /* GrowingUIConfig.h in Headers */,
+				182AE50E214A5F730077415C /* GrowingHTTPDynamicFileResponse.h in Headers */,
+				189050B320A6FAB600C99C6D /* FMG3Database.h in Headers */,
+				182AE4FD214A5F4D0077415C /* GrowingHTTPLogging.h in Headers */,
+				1890505420A6FA2200C99C6D /* UIWindow+GrowingHelper.h in Headers */,
+				183D9013226AC8BF00C217F8 /* GrowingEBEvent.h in Headers */,
+				1890501520A6F8B600C99C6D /* GrowingEventManager.h in Headers */,
+				18CFA86E20A40699004E3681 /* UIApplication+Growing.h in Headers */,
+				189050BF20A6FAF300C99C6D /* GrowingMediator.h in Headers */,
+				1890515720A7036F00C99C6D /* FoWeakObjectShell.h in Headers */,
+				1890509520A6FAB600C99C6D /* MASG3ViewAttribute.h in Headers */,
+				182AE4F6214A5F4D0077415C /* GrowingHTTPServer.h in Headers */,
+				1890510C20A7010600C99C6D /* GrowingNetworkConfig.h in Headers */,
+				189050A620A6FAB600C99C6D /* NSLayoutConstraint+MASG3DebugAdditions.h in Headers */,
+				1890515F20A7036F00C99C6D /* FoSwizzling.h in Headers */,
+				1890505520A6FA2200C99C6D /* UIApplication+GrowingHelper.h in Headers */,
+				189050B120A6FAB600C99C6D /* FMG3DatabaseAdditions.h in Headers */,
+				4979EB9A243715A600A408C9 /* GrowingActivateEvent.h in Headers */,
+				182AE511214A5F730077415C /* GrowingHTTPAsyncFileResponse.h in Headers */,
+				1890501C20A6F8B600C99C6D /* GrowingDeviceInfo.h in Headers */,
+				1890505320A6FA2200C99C6D /* NSArray+GrowingHelper.h in Headers */,
+				183D8FFE226ABB1100C217F8 /* GrowingEventBus.h in Headers */,
+				1890515020A7036F00C99C6D /* G3fishhook.h in Headers */,
+				1890510420A7010600C99C6D /* Growing3rdLibSocketRocket-Prefix.pch in Headers */,
+				1890512920A7023300C99C6D /* GrowingEventCounter.h in Headers */,
+				18CFA86B20A40699004E3681 /* UIApplication+GrowingNode.h in Headers */,
+				189050B020A6FAB600C99C6D /* FMG3DatabasePool.h in Headers */,
+				1890512A20A7023300C99C6D /* GrowingInstance.h in Headers */,
+				182AE512214A5F730077415C /* GrowingHTTPFileResponse.h in Headers */,
+				1890515E20A7036F00C99C6D /* FoObjectSELObserver.h in Headers */,
+				1890501420A6F8B600C99C6D /* GrowingManualTrackEvent.h in Headers */,
+				1890514F20A7036F00C99C6D /* FoAspect.h in Headers */,
+				1890514E20A7036F00C99C6D /* FoAspectMacro.h in Headers */,
+				182AE4FC214A5F4D0077415C /* GrowingHTTPAuthenticationRequest.h in Headers */,
+				1890505F20A6FA2200C99C6D /* NSURL+GrowingHelper.h in Headers */,
+				182AE500214A5F4D0077415C /* GrowingHTTPConnection.h in Headers */,
+				1890509420A6FAB600C99C6D /* MASG3ViewConstraint.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		186DC67723966398002C0D52 /* GrowingCoreKitUnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 186DC68223966399002C0D52 /* Build configuration list for PBXNativeTarget "GrowingCoreKitUnitTest" */;
+			buildPhases = (
+				FEFF5B899C82ED5719BE8C61 /* [CP] Check Pods Manifest.lock */,
+				186DC67423966398002C0D52 /* Sources */,
+				186DC67523966398002C0D52 /* Frameworks */,
+				186DC67623966398002C0D52 /* Resources */,
+				A68A9429404EFCD930DA2083 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				186DC67F23966399002C0D52 /* PBXTargetDependency */,
+			);
+			name = GrowingCoreKitUnitTest;
+			productName = GrowingCoreKitUnitTest;
+			productReference = 186DC67823966399002C0D52 /* GrowingCoreKitUnitTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1875FB0120909B380019AED3 /* GrowingCoreKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1875FB0A20909B380019AED3 /* Build configuration list for PBXNativeTarget "GrowingCoreKit" */;
+			buildPhases = (
+				1875FAFD20909B380019AED3 /* Sources */,
+				1875FAFE20909B380019AED3 /* Frameworks */,
+				1875FAFF20909B380019AED3 /* Headers */,
+				1875FB0020909B380019AED3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrowingCoreKit;
+			productName = GrowingCoreKit;
+			productReference = 1875FB0220909B380019AED3 /* GrowingCoreKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1875FAF920909B380019AED3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = GrowingIO;
+				TargetAttributes = {
+					186DC67723966398002C0D52 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					1875FB0120909B380019AED3 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 1875FAFC20909B380019AED3 /* Build configuration list for PBXProject "GrowingCoreKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1875FAF820909B380019AED3;
+			productRefGroup = 1875FB0320909B380019AED3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1875FB0120909B380019AED3 /* GrowingCoreKit */,
+				186DC67723966398002C0D52 /* GrowingCoreKitUnitTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		186DC67623966398002C0D52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1875FB0020909B380019AED3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A68A9429404EFCD930DA2083 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrowingCoreKitUnitTest/Pods-GrowingCoreKitUnitTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrowingCoreKitUnitTest/Pods-GrowingCoreKitUnitTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrowingCoreKitUnitTest/Pods-GrowingCoreKitUnitTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEFF5B899C82ED5719BE8C61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrowingCoreKitUnitTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		186DC67423966398002C0D52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4218AB0823C97C8100E53763 /* GrowingCoreDateTest.m in Sources */,
+				18A6487823968A4D00C367C2 /* MediatorTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1875FAFD20909B380019AED3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1890501720A6F8B600C99C6D /* GrowingEvent.m in Sources */,
+				182AE4F5214A5F4D0077415C /* GrowingHTTPAuthenticationRequest.m in Sources */,
+				18CFA86C20A40699004E3681 /* UIApplication+Growing.m in Sources */,
+				3FE2BA2A25FA23D30024E9F5 /* GrowingWKWebViewJavascriptBridge.m in Sources */,
+				42009E5E22C4C61C008E876A /* GrowingEBUserIdEvent.m in Sources */,
+				4222B2E62473F28100EF5B60 /* GrowingASLLoggerFormat.m in Sources */,
+				182AE4FA214A5F4D0077415C /* GrowingHTTPServer.m in Sources */,
+				1890515B20A7036F00C99C6D /* G3fishhook.c in Sources */,
+				1890505620A6FA2200C99C6D /* GrowingDispatchManager.m in Sources */,
+				182AE4E7214A5F230077415C /* GrowingGCDAsyncSocket.m in Sources */,
+				1890500120A6F85500C99C6D /* NSDictionary+GrowingDebug.m in Sources */,
+				189050A320A6FAB600C99C6D /* MASG3CompositeConstraint.m in Sources */,
+				189050AE20A6FAB600C99C6D /* FMG3DatabaseQueue.m in Sources */,
+				189050DA20A6FFE300C99C6D /* GrowingMenuView.m in Sources */,
+				1890509F20A6FAB600C99C6D /* MASG3ViewAttribute.m in Sources */,
+				1890510F20A7010600C99C6D /* GrowingMobileDebugger.m in Sources */,
+				429B6BDA244EC8530043F8D5 /* GrowingTTYLogger.m in Sources */,
+				18904FEF20A6F66700C99C6D /* GrowingAttributesConst.m in Sources */,
+				189050A120A6FAB600C99C6D /* MASG3ViewConstraint.m in Sources */,
+				189050D620A6FFE300C99C6D /* GrowingKeyBoardToolBar.m in Sources */,
+				1890515520A7036F00C99C6D /* FoSwizzling.m in Sources */,
+				1890510D20A7010600C99C6D /* GrowingBaseModel.m in Sources */,
+				18904FF420A6F67000C99C6D /* GrowingWindow.m in Sources */,
+				1890515C20A7036F00C99C6D /* FoWeakObjectShell.m in Sources */,
+				18CFCC85228437230022291D /* GrowingEBVCLifeEvent.m in Sources */,
+				18CFA86D20A40699004E3681 /* UIApplication+GrowingNode.m in Sources */,
+				1890515A20A7036F00C99C6D /* GrowingAspect.m in Sources */,
+				1890505120A6FA2200C99C6D /* UITextField+GrowingHelper.m in Sources */,
+				189050B220A6FAB600C99C6D /* FMG3ResultSet.m in Sources */,
+				1890510120A7010600C99C6D /* GROW_KDNetworkInterfaceManager.m in Sources */,
+				189050DC20A6FFE300C99C6D /* GrowingAlertMenu.m in Sources */,
+				1890512C20A7023300C99C6D /* GrowingInstance.m in Sources */,
+				347EAC702BDA058A0000E453 /* GrowingNetworkPreflight.m in Sources */,
+				4979EB9B243715A600A408C9 /* GrowingActivateEvent.m in Sources */,
+				182AE522214A5F960077415C /* GrowingDDData.m in Sources */,
+				1890506320A6FA2200C99C6D /* NSArray+GrowingHelper.m in Sources */,
+				1890505E20A6FA2200C99C6D /* UIView+GrowingHelperLayout.m in Sources */,
+				183D9014226AC8BF00C217F8 /* GrowingEBEvent.m in Sources */,
+				1890510620A7010600C99C6D /* lz4.c in Sources */,
+				3FE2BA3025FA25EA0024E9F5 /* GrowingWebViewJavascriptBridgeConfiguration.m in Sources */,
+				1890505C20A6FA2200C99C6D /* UIImage+GrowingHelper.m in Sources */,
+				18904FEB20A6F65D00C99C6D /* GrowingGlobal.m in Sources */,
+				3FE2BA3325FA26640024E9F5 /* GrowingWebViewJavascriptMessage.m in Sources */,
+				1890506020A6FA2200C99C6D /* UIControl+GrowingHelper.m in Sources */,
+				42211000247E460100291115 /* GrowingFileStore.m in Sources */,
+				189050D720A6FFE300C99C6D /* GrowingHelperMenu.m in Sources */,
+				1885085222C61A7C00AC65A7 /* UIScene+Growing.m in Sources */,
+				189050BC20A6FAF300C99C6D /* GrowingMediator+GrowingDeepLink.m in Sources */,
+				1890515920A7036F00C99C6D /* FoAspect.m in Sources */,
+				189050A420A6FAB600C99C6D /* MASG3ConstraintMaker.m in Sources */,
+				422F36BA246295E500DFAFF3 /* GrowingWSLogger.m in Sources */,
+				1890506220A6FA2200C99C6D /* UIWindow+GrowingHelper.m in Sources */,
+				1890501820A6F8B600C99C6D /* GrowingEventDataBase.m in Sources */,
+				182AE50C214A5F730077415C /* GrowingHTTPFileResponse.m in Sources */,
+				49EC075A243DB46300CD95BD /* GrowingEventCounter.m in Sources */,
+				1890501B20A6F8B600C99C6D /* GrowingManualTrackEvent.m in Sources */,
+				1890501320A6F8B600C99C6D /* GrowingDeviceInfo.m in Sources */,
+				182AE4F7214A5F4D0077415C /* GrowingHTTPConnection.m in Sources */,
+				1890510720A7010600C99C6D /* GrowingEventModel.m in Sources */,
+				189050AF20A6FAB600C99C6D /* FMG3Database.m in Sources */,
+				494BF2AD238CED9F0050E014 /* GrowingEBMonitorEvent.m in Sources */,
+				182AE515214A5F730077415C /* GrowingHTTPRedirectResponse.m in Sources */,
+				189050D120A6FFE300C99C6D /* GrowingStatusBar.m in Sources */,
+				189050D220A6FFE300C99C6D /* GrowingMenu.m in Sources */,
+				1817BAEF22E801CD0000FD1C /* GrowingDeepLinkModel.m in Sources */,
+				1890505720A6FA2200C99C6D /* NSNumber+GrowingHelper.m in Sources */,
+				182AE4F9214A5F4D0077415C /* GrowingHTTPMessage.m in Sources */,
+				182AE4F8214A5F4D0077415C /* GrowingWebSocketServer.m in Sources */,
+				1890509320A6FAB600C99C6D /* ViewController+MASG3Additions.m in Sources */,
+				1890505D20A6FA2200C99C6D /* NSString+GrowingHelper.m in Sources */,
+				1890509B20A6FAB600C99C6D /* View+MASG3Additions.m in Sources */,
+				429B6BC0244EC8520043F8D5 /* GrowingLog.m in Sources */,
+				429B6BC8244EC8520043F8D5 /* GrowingASLLogger.m in Sources */,
+				1890505D20A6FA2200C99C6D /* NSString+GrowingHelper.m in Sources */,
+				3FE2BA2D25FA24730024E9F5 /* GrowingWKWebViewJavascriptBridge_JS.m in Sources */,
+				1890505820A6FA2200C99C6D /* NSObject+GrowingIvarHelper.m in Sources */,
+				1890505B20A6FA2200C99C6D /* UIView+GrowingHelper.m in Sources */,
+				1890509D20A6FAB600C99C6D /* NSLayoutConstraint+MASG3DebugAdditions.m in Sources */,
+				189050BD20A6FAF300C99C6D /* GrowingMediator.m in Sources */,
+				1890509120A6FAB600C99C6D /* NSArray+MASG3Additions.m in Sources */,
+				189050AD20A6FAB600C99C6D /* FMG3DatabaseAdditions.m in Sources */,
+				1890506120A6FA2200C99C6D /* NSDictionary+GrowingHelper.m in Sources */,
+				182AE510214A5F730077415C /* GrowingHTTPDataResponse.m in Sources */,
+				34ACBFBB2721703900ECF6A1 /* GrowingAsaFetcher.m in Sources */,
+				1890515620A7036F00C99C6D /* FoObjectSELObserver.m in Sources */,
+				184303042269E72A008518EE /* GrowingEventBusMethodMap.m in Sources */,
+				183D9018226ACA4900C217F8 /* GrowingEBTrackSelfEvent.m in Sources */,
+				183D8FFF226ABB1100C217F8 /* GrowingEventBus.m in Sources */,
+				1890505920A6FA2200C99C6D /* NSData+GrowingHelper.m in Sources */,
+				189050AB20A6FAB600C99C6D /* GrowingReachability.m in Sources */,
+				1890504C20A6FA2200C99C6D /* NSURL+GrowingHelper.m in Sources */,
+				1890510220A7010600C99C6D /* Growing3rdLibSRWebSocket.m in Sources */,
+				18E3C80623262B3D003EFAEA /* GrowingVersionManager.m in Sources */,
+				1890501D20A6F8B600C99C6D /* GrowingEventManager.m in Sources */,
+				1890506420A6FA2200C99C6D /* NSObject+GrowingHelper.m in Sources */,
+				18CFCC7D2283E43E0022291D /* GrowingEBApplicationEvent.m in Sources */,
+				182AE514214A5F730077415C /* GrowingHTTPAsyncFileResponse.m in Sources */,
+				1890516620A7039B00C99C6D /* GrowingUIConfig.m in Sources */,
+				1890506620A6FA2200C99C6D /* UIApplication+GrowingHelper.m in Sources */,
+				188A5C2D20A9674D00E9B4A7 /* GrowingCoreKit.m in Sources */,
+				1890509C20A6FAB600C99C6D /* MASG3Constraint.m in Sources */,
+				1890509A20A6FAB600C99C6D /* MASG3LayoutConstraint.m in Sources */,
+				429B6BD4244EC8530043F8D5 /* GrowingLoggerNames.m in Sources */,
+				1890502020A6F8B600C99C6D /* GrowingCustomField.m in Sources */,
+				18904FFC20A6F6D500C99C6D /* GrowingUserDefaults.m in Sources */,
+				1890510820A7010600C99C6D /* GrowingNetworkConfig.m in Sources */,
+				42009E6222C4CFDC008E876A /* GrowingEBManualTrackEvent.m in Sources */,
+				34A88063267B439D00B51F8D /* GrowingDDNumber.m in Sources */,
+				182AE520214A5F960077415C /* GrowingDDRange.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		186DC67F23966399002C0D52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1875FB0120909B380019AED3 /* GrowingCoreKit */;
+			targetProxy = 186DC67E23966399002C0D52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		186DC68023966399002C0D52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6C6F023C3C670864F11ABA5 /* Pods-GrowingCoreKitUnitTest.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SXBU677CPT;
+				INFOPLIST_FILE = GrowingCoreKitUnitTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"IOKit\"",
+					"-framework",
+					"\"KIF\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"XCTest\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.growingio.GrowingCoreKitUnitTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		186DC68123966399002C0D52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9BB7605E4E08B8D1053C304 /* Pods-GrowingCoreKitUnitTest.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SXBU677CPT;
+				INFOPLIST_FILE = GrowingCoreKitUnitTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.growingio.GrowingCoreKitUnitTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1875FB0820909B380019AED3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1875FB0920909B380019AED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1875FB0B20909B380019AED3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
+				CLANG_MODULES_AUTOLINK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = ../GrowingCoreKit/GrowingCoreKit/Base/Growing.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "$(SRCROOT)/GrowingCoreKit/UIConfig/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-Wextra",
+					"-Wall",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GrowingIO.GrowingCoreKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1875FB0C20909B380019AED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULE_DEBUGGING = NO;
+				CLANG_MODULES_AUTOLINK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = ../GrowingCoreKit/GrowingCoreKit/Base/Growing.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "$(SRCROOT)/GrowingCoreKit/UIConfig/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-Wextra",
+					"-Wall",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GrowingIO.GrowingCoreKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		186DC68223966399002C0D52 /* Build configuration list for PBXNativeTarget "GrowingCoreKitUnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186DC68023966399002C0D52 /* Debug */,
+				186DC68123966399002C0D52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1875FAFC20909B380019AED3 /* Build configuration list for PBXProject "GrowingCoreKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1875FB0820909B380019AED3 /* Debug */,
+				1875FB0920909B380019AED3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1875FB0A20909B380019AED3 /* Build configuration list for PBXNativeTarget "GrowingCoreKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1875FB0B20909B380019AED3 /* Debug */,
+				1875FB0C20909B380019AED3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1875FAF920909B380019AED3 /* Project object */;
+}
